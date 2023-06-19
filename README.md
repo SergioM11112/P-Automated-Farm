@@ -6,6 +6,7 @@ A lo largo de este repositorio en **GitHub** se exhibirán una serie documentos,
 
 # Contenido
 ## Equipo de Trabajo
+![313-3134285_logo-de-la-universidad-nacional-de-colombia-png](https://github.com/SergioM11112/P-Automated-Farm/assets/125077754/3b83d7e4-e0f8-4a79-826e-3dc60adef972)
 
 [Escudo de nuestra amada Universidad Nacional de Colombia](https://www.vhv.rs/viewpic/iwJbThw_logo-de-la-universidad-nacional-de-colombia-png/)
 
