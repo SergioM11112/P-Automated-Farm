@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.691
+TNS   : -70.576
+
+Type  : Slow 1200mV 85C Model Setup 'div_frec:div_cont|salida'
+Slack : 0.114
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_frec:div_cont|salida'
+Slack : 0.497
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.760
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -46.123
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_frec:div_cont|salida'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -4.316
+TNS   : -61.369
+
+Type  : Slow 1200mV 0C Model Setup 'div_frec:div_cont|salida'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_frec:div_cont|salida'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.705
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -46.123
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_frec:div_cont|salida'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.514
+TNS   : -15.441
+
+Type  : Fast 1200mV 0C Model Setup 'div_frec:div_cont|salida'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div_frec:div_cont|salida'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.268
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -33.863
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_frec:div_cont|salida'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

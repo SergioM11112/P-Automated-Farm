@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "comedero",
+					"strict" : false
+				},
+				{
+					"name" : "alarma",
+					"strict" : false
+				},
+				{
+					"name" : "lluvia",
+					"strict" : false
+				},
+				{
+					"name" : "frio",
+					"strict" : false
+				},
+				{
+					"name" : "calor",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

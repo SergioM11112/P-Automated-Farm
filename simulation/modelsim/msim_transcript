@@ -1,0 +1,60 @@
+# Reading pref.tcl
+# do P-Automated-Farm_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/contador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:22:49 on Jun 20,2023
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/contador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contador
+# -- Compiling architecture contar of contador
+# End time: 13:22:49 on Jun 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/ffJK.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:22:49 on Jun 20,2023
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/ffJK.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity ffJK
+# -- Compiling architecture memoria of ffJK
+# ** Warning: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/ffJK.vhd(24): (vcom-1013) Initial value of "qin" depends on value of signal "Vin".
+# ** Warning: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/ffJK.vhd(24): (vcom-1013) Initial value of "qout" depends on value of signal "Vin".
+# End time: 13:22:49 on Jun 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# 
+vsim work.contador
+# vsim work.contador 
+# Start time: 13:22:55 on Jun 20,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.contador(contar)
+# Loading work.ffjk(memoria)
+wave create -driver freeze -pattern clock -initialvalue U -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/contador/f
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+add wave -position insertpoint  \
+sim:/contador/tiempo
+run -all
+# End time: 13:23:59 on Jun 20,2023, Elapsed time: 0:01:04
+# Errors: 0, Warnings: 0
