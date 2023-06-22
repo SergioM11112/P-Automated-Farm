@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.760
+TNS   : -225.461
+
+Type  : Slow 1200mV 85C Model Setup 'div_frec:div_servo|salida'
+Slack : -1.167
+TNS   : -4.597
+
+Type  : Slow 1200mV 85C Model Setup 'div_frec:div_btn|salida'
+Slack : -0.321
+TNS   : -0.483
+
+Type  : Slow 1200mV 85C Model Setup 'anti_rebote:btn_c|bto'
+Slack : 0.012
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'anti_rebote:btn_c|bto'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_frec:div_servo|salida'
+Slack : 0.464
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.485
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_frec:div_btn|salida'
+Slack : 0.492
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -123.447
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_frec:div_servo|salida'
+Slack : -1.487
+TNS   : -10.409
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_frec:div_btn|salida'
+Slack : -1.487
+TNS   : -7.435
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'anti_rebote:btn_c|bto'
+Slack : -1.487
+TNS   : -2.974
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -4.432
+TNS   : -197.208
+
+Type  : Slow 1200mV 0C Model Setup 'div_frec:div_servo|salida'
+Slack : -0.943
+TNS   : -3.647
+
+Type  : Slow 1200mV 0C Model Setup 'div_frec:div_btn|salida'
+Slack : -0.190
+TNS   : -0.240
+
+Type  : Slow 1200mV 0C Model Setup 'anti_rebote:btn_c|bto'
+Slack : 0.110
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'anti_rebote:btn_c|bto'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_frec:div_servo|salida'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.430
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_frec:div_btn|salida'
+Slack : 0.456
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -123.447
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_frec:div_servo|salida'
+Slack : -1.487
+TNS   : -10.409
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_frec:div_btn|salida'
+Slack : -1.487
+TNS   : -7.435
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'anti_rebote:btn_c|bto'
+Slack : -1.487
+TNS   : -2.974
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.487
+TNS   : -56.485
+
+Type  : Fast 1200mV 0C Model Setup 'div_frec:div_servo|salida'
+Slack : 0.060
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_frec:div_btn|salida'
+Slack : 0.428
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'anti_rebote:btn_c|bto'
+Slack : 0.566
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'anti_rebote:btn_c|bto'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div_frec:div_servo|salida'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div_frec:div_btn|salida'
+Slack : 0.198
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -89.213
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_frec:div_servo|salida'
+Slack : -1.000
+TNS   : -7.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_frec:div_btn|salida'
+Slack : -1.000
+TNS   : -5.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'anti_rebote:btn_c|bto'
+Slack : -1.000
+TNS   : -2.000
+
+------------------------------------------------------------

@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "puerta",
+					"strict" : false
+				},
+				{
+					"name" : "alarma",
+					"strict" : false
+				},
+				{
+					"name" : "calor",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "btn",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
