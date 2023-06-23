@@ -4,23 +4,31 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "puerta",
+					"name" : "sal",
 					"strict" : false
 				},
 				{
-					"name" : "alarma",
+					"name" : "Q[0]",
 					"strict" : false
 				},
 				{
-					"name" : "calor",
+					"name" : "Q[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Q[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Q[3]",
+					"strict" : false
+				},
+				{
+					"name" : "start",
 					"strict" : false
 				},
 				{
 					"name" : "clk",
-					"strict" : false
-				},
-				{
-					"name" : "btn",
 					"strict" : false
 				}
 			]

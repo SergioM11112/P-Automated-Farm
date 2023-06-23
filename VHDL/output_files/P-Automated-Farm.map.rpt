@@ -1,5 +1,5 @@
 Analysis & Synthesis report for P-Automated-Farm
-Wed Jun 21 22:48:57 2023
+Thu Jun 22 22:48:37 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -13,22 +13,15 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Port Connectivity Checks: "ffD:FQ1"
- 12. Port Connectivity Checks: "ffD:FQ0"
- 13. Port Connectivity Checks: "div_frec:div_2"
- 14. Port Connectivity Checks: "div_frec:div_1"
- 15. Port Connectivity Checks: "senal_PWM:sServo2"
- 16. Port Connectivity Checks: "senal_PWM:sServo1"
- 17. Port Connectivity Checks: "senal_PWM:alarm"
- 18. Port Connectivity Checks: "div_frec:div_buzz"
- 19. Port Connectivity Checks: "div_frec:div_servo"
- 20. Port Connectivity Checks: "div_frec:div_btn"
- 21. Post-Synthesis Netlist Statistics for Top Partition
- 22. Elapsed Time Per Partition
- 23. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Inverted Register Statistics
+ 10. Port Connectivity Checks: "ffJK:cont_3"
+ 11. Port Connectivity Checks: "ffJK:cont_2"
+ 12. Port Connectivity Checks: "ffJK:cont_1"
+ 13. Port Connectivity Checks: "ffJK:cont_0"
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -55,16 +48,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 21 22:48:57 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 22 22:48:37 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; P-Automated-Farm                            ;
-; Top-level Entity Name              ; main                                        ;
+; Top-level Entity Name              ; contador                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 154                                         ;
-;     Total combinational functions  ; 150                                         ;
-;     Dedicated logic registers      ; 95                                          ;
-; Total registers                    ; 95                                          ;
-; Total pins                         ; 9                                           ;
+; Total logic elements               ; 6                                           ;
+;     Total combinational functions  ; 6                                           ;
+;     Dedicated logic registers      ; 4                                           ;
+; Total registers                    ; 4                                           ;
+; Total pins                         ; 7                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -78,7 +71,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE10E22C8       ;                    ;
-; Top-level entity name                                            ; main               ; P-Automated-Farm   ;
+; Top-level entity name                                            ; contador           ; P-Automated-Farm   ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -163,101 +156,72 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processors 2-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                             ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                      ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
-; main.vhd                         ; yes             ; User VHDL File  ; C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd         ;         ;
-; div_frec.vhd                     ; yes             ; User VHDL File  ; C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/div_frec.vhd     ;         ;
-; anti_rebote.vhd                  ; yes             ; User VHDL File  ; C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/anti_rebote.vhd  ;         ;
-; senal_PWM.vhd                    ; yes             ; User VHDL File  ; C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/senal_PWM.vhd    ;         ;
-; ffD.vhd                          ; yes             ; User VHDL File  ; C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/ffD.vhd          ;         ;
-; control_temp.vhd                 ; yes             ; User VHDL File  ; C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/control_temp.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                              ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                       ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
+; contador.vhd                     ; yes             ; User VHDL File  ; C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/contador.vhd ;         ;
+; ffJK.vhd                         ; yes             ; User VHDL File  ; C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/ffJK.vhd     ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 154       ;
-;                                             ;           ;
-; Total combinational functions               ; 150       ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 29        ;
-;     -- 3 input functions                    ; 6         ;
-;     -- <=2 input functions                  ; 115       ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 68        ;
-;     -- arithmetic mode                      ; 82        ;
-;                                             ;           ;
-; Total registers                             ; 95        ;
-;     -- Dedicated logic registers            ; 95        ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 9         ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 81        ;
-; Total fan-out                               ; 559       ;
-; Average fan-out                             ; 2.13      ;
-+---------------------------------------------+-----------+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimated Total logic elements              ; 6                ;
+;                                             ;                  ;
+; Total combinational functions               ; 6                ;
+; Logic element usage by number of LUT inputs ;                  ;
+;     -- 4 input functions                    ; 1                ;
+;     -- 3 input functions                    ; 2                ;
+;     -- <=2 input functions                  ; 3                ;
+;                                             ;                  ;
+; Logic elements by mode                      ;                  ;
+;     -- normal mode                          ; 6                ;
+;     -- arithmetic mode                      ; 0                ;
+;                                             ;                  ;
+; Total registers                             ; 4                ;
+;     -- Dedicated logic registers            ; 4                ;
+;     -- I/O registers                        ; 0                ;
+;                                             ;                  ;
+; I/O pins                                    ; 7                ;
+;                                             ;                  ;
+; Embedded Multiplier 9-bit elements          ; 0                ;
+;                                             ;                  ;
+; Maximum fan-out node                        ; ffJK:cont_0|qout ;
+; Maximum fan-out                             ; 6                ;
+; Total fan-out                               ; 39               ;
+; Average fan-out                             ; 1.63             ;
++---------------------------------------------+------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                              ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Entity Name  ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+--------------+
-; |main                      ; 150 (3)             ; 95 (0)                    ; 0           ; 0            ; 0       ; 0         ; 9    ; 0            ; |main                      ; main         ; work         ;
-;    |anti_rebote:btn_c|     ; 1 (1)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|anti_rebote:btn_c    ; anti_rebote  ; work         ;
-;    |control_temp:f_calor|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|control_temp:f_calor ; control_temp ; work         ;
-;    |div_frec:div_1|        ; 49 (49)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|div_frec:div_1       ; div_frec     ; work         ;
-;    |div_frec:div_btn|      ; 44 (44)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|div_frec:div_btn     ; div_frec     ; work         ;
-;    |div_frec:div_servo|    ; 45 (45)             ; 29 (29)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|div_frec:div_servo   ; div_frec     ; work         ;
-;    |ffD:FQ0|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ffD:FQ0              ; ffD          ; work         ;
-;    |ffD:FQ1|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ffD:FQ1              ; ffD          ; work         ;
-;    |senal_PWM:sServo1|     ; 6 (6)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|senal_PWM:sServo1    ; senal_PWM    ; work         ;
-;    |senal_PWM:sServo2|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|senal_PWM:sServo2    ; senal_PWM    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                        ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+-------------+--------------+
+; |contador                  ; 6 (2)               ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 7    ; 0            ; |contador             ; contador    ; work         ;
+;    |ffJK:cont_0|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |contador|ffJK:cont_0 ; ffJK        ; work         ;
+;    |ffJK:cont_1|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |contador|ffJK:cont_1 ; ffJK        ; work         ;
+;    |ffJK:cont_2|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |contador|ffJK:cont_2 ; ffJK        ; work         ;
+;    |ffJK:cont_3|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |contador|ffJK:cont_3 ; ffJK        ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                ;
-+----------------------------------------+------------------------------------------+
-; Register name                          ; Reason for Removal                       ;
-+----------------------------------------+------------------------------------------+
-; senal_PWM:sServo2|cont[4]              ; Merged with senal_PWM:sServo1|cont[4]    ;
-; senal_PWM:sServo2|cont[3]              ; Merged with senal_PWM:sServo1|cont[3]    ;
-; senal_PWM:sServo2|cont[2]              ; Merged with senal_PWM:sServo1|cont[2]    ;
-; senal_PWM:sServo2|cont[1]              ; Merged with senal_PWM:sServo1|cont[1]    ;
-; senal_PWM:sServo2|cont[0]              ; Merged with senal_PWM:sServo1|cont[0]    ;
-; div_frec:div_btn|cuenta[0]             ; Merged with div_frec:div_servo|cuenta[0] ;
-; div_frec:div_1|cuenta[0]               ; Merged with div_frec:div_servo|cuenta[0] ;
-; div_frec:div_btn|cuenta[1]             ; Merged with div_frec:div_servo|cuenta[1] ;
-; div_frec:div_1|cuenta[1]               ; Merged with div_frec:div_servo|cuenta[1] ;
-; div_frec:div_btn|cuenta[2]             ; Merged with div_frec:div_1|cuenta[2]     ;
-; div_frec:div_btn|cuenta[3]             ; Merged with div_frec:div_1|cuenta[3]     ;
-; Total Number of Removed Registers = 11 ;                                          ;
-+----------------------------------------+------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -265,10 +229,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 95    ;
+; Total registers                              ; 4     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 4     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -280,174 +244,51 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; senal_PWM:sServo1|cont[0]              ; 2       ;
-; div_frec:div_servo|cuenta[0]           ; 5       ;
-; Total number of inverted registers = 2 ;         ;
+; ffJK:cont_3|qout                       ; 4       ;
+; Total number of inverted registers = 1 ;         ;
 +----------------------------------------+---------+
 
 
-+----------------------------------------+
-; Port Connectivity Checks: "ffD:FQ1"    ;
-+------+-------+----------+--------------+
-; Port ; Type  ; Severity ; Details      ;
-+------+-------+----------+--------------+
-; qin  ; Input ; Info     ; Stuck at GND ;
-; set  ; Input ; Info     ; Stuck at GND ;
-; rst  ; Input ; Info     ; Stuck at GND ;
-+------+-------+----------+--------------+
++-----------------------------------------+
+; Port Connectivity Checks: "ffJK:cont_3" ;
++------+-------+----------+---------------+
+; Port ; Type  ; Severity ; Details       ;
++------+-------+----------+---------------+
+; vin  ; Input ; Info     ; Stuck at VCC  ;
+; rst  ; Input ; Info     ; Stuck at VCC  ;
++------+-------+----------+---------------+
 
 
-+----------------------------------------+
-; Port Connectivity Checks: "ffD:FQ0"    ;
-+------+-------+----------+--------------+
-; Port ; Type  ; Severity ; Details      ;
-+------+-------+----------+--------------+
-; qin  ; Input ; Info     ; Stuck at GND ;
-; set  ; Input ; Info     ; Stuck at GND ;
-; rst  ; Input ; Info     ; Stuck at GND ;
-+------+-------+----------+--------------+
++-----------------------------------------+
+; Port Connectivity Checks: "ffJK:cont_2" ;
++------+-------+----------+---------------+
+; Port ; Type  ; Severity ; Details       ;
++------+-------+----------+---------------+
+; vin  ; Input ; Info     ; Stuck at GND  ;
+; set  ; Input ; Info     ; Stuck at VCC  ;
++------+-------+----------+---------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "div_frec:div_2"                                                                                ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port            ; Type   ; Severity ; Details                                                                             ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
-; nciclos[22..18] ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; nciclos[14..11] ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; nciclos[31..25] ; Input  ; Info     ; Stuck at GND                                                                        ;
-; nciclos[10..7]  ; Input  ; Info     ; Stuck at GND                                                                        ;
-; nciclos[5..0]   ; Input  ; Info     ; Stuck at GND                                                                        ;
-; nciclos[24]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; nciclos[23]     ; Input  ; Info     ; Stuck at GND                                                                        ;
-; nciclos[17]     ; Input  ; Info     ; Stuck at GND                                                                        ;
-; nciclos[16]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; nciclos[15]     ; Input  ; Info     ; Stuck at GND                                                                        ;
-; nciclos[6]      ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; f               ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
++-----------------------------------------+
+; Port Connectivity Checks: "ffJK:cont_1" ;
++------+-------+----------+---------------+
+; Port ; Type  ; Severity ; Details       ;
++------+-------+----------+---------------+
+; vin  ; Input ; Info     ; Stuck at GND  ;
+; set  ; Input ; Info     ; Stuck at VCC  ;
++------+-------+----------+---------------+
 
 
-+---------------------------------------------------+
-; Port Connectivity Checks: "div_frec:div_1"        ;
-+-----------------+-------+----------+--------------+
-; Port            ; Type  ; Severity ; Details      ;
-+-----------------+-------+----------+--------------+
-; nciclos[21..17] ; Input ; Info     ; Stuck at VCC ;
-; nciclos[13..10] ; Input ; Info     ; Stuck at VCC ;
-; nciclos[31..24] ; Input ; Info     ; Stuck at GND ;
-; nciclos[9..6]   ; Input ; Info     ; Stuck at GND ;
-; nciclos[4..0]   ; Input ; Info     ; Stuck at GND ;
-; nciclos[23]     ; Input ; Info     ; Stuck at VCC ;
-; nciclos[22]     ; Input ; Info     ; Stuck at GND ;
-; nciclos[16]     ; Input ; Info     ; Stuck at GND ;
-; nciclos[15]     ; Input ; Info     ; Stuck at VCC ;
-; nciclos[14]     ; Input ; Info     ; Stuck at GND ;
-; nciclos[5]      ; Input ; Info     ; Stuck at VCC ;
-+-----------------+-------+----------+--------------+
-
-
-+--------------------------------------------------+
-; Port Connectivity Checks: "senal_PWM:sServo2"    ;
-+----------------+-------+----------+--------------+
-; Port           ; Type  ; Severity ; Details      ;
-+----------------+-------+----------+--------------+
-; nciclos[31..6] ; Input ; Info     ; Stuck at GND ;
-; nciclos[2..0]  ; Input ; Info     ; Stuck at GND ;
-; nciclos[5]     ; Input ; Info     ; Stuck at VCC ;
-; nciclos[4]     ; Input ; Info     ; Stuck at GND ;
-; nciclos[3]     ; Input ; Info     ; Stuck at VCC ;
-; lim[31..3]     ; Input ; Info     ; Stuck at GND ;
-; lim[2]         ; Input ; Info     ; Stuck at VCC ;
-; lim[1]         ; Input ; Info     ; Stuck at GND ;
-; lim[0]         ; Input ; Info     ; Stuck at VCC ;
-+----------------+-------+----------+--------------+
-
-
-+--------------------------------------------------+
-; Port Connectivity Checks: "senal_PWM:sServo1"    ;
-+----------------+-------+----------+--------------+
-; Port           ; Type  ; Severity ; Details      ;
-+----------------+-------+----------+--------------+
-; nciclos[31..6] ; Input ; Info     ; Stuck at GND ;
-; nciclos[2..0]  ; Input ; Info     ; Stuck at GND ;
-; nciclos[5]     ; Input ; Info     ; Stuck at VCC ;
-; nciclos[4]     ; Input ; Info     ; Stuck at GND ;
-; nciclos[3]     ; Input ; Info     ; Stuck at VCC ;
-; lim[31..1]     ; Input ; Info     ; Stuck at GND ;
-; lim[0]         ; Input ; Info     ; Stuck at VCC ;
-+----------------+-------+----------+--------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "senal_PWM:alarm"                                                                              ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port           ; Type   ; Severity ; Details                                                                             ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; nciclos[1..0]  ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; nciclos[31..2] ; Input  ; Info     ; Stuck at GND                                                                        ;
-; lim[31..2]     ; Input  ; Info     ; Stuck at GND                                                                        ;
-; lim[1]         ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; lim[0]         ; Input  ; Info     ; Stuck at GND                                                                        ;
-; pwm            ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "div_frec:div_buzz"     ;
-+-----------------+-------+----------+--------------+
-; Port            ; Type  ; Severity ; Details      ;
-+-----------------+-------+----------+--------------+
-; nciclos[21..17] ; Input ; Info     ; Stuck at VCC ;
-; nciclos[13..10] ; Input ; Info     ; Stuck at VCC ;
-; nciclos[31..24] ; Input ; Info     ; Stuck at GND ;
-; nciclos[9..6]   ; Input ; Info     ; Stuck at GND ;
-; nciclos[4..0]   ; Input ; Info     ; Stuck at GND ;
-; nciclos[23]     ; Input ; Info     ; Stuck at VCC ;
-; nciclos[22]     ; Input ; Info     ; Stuck at GND ;
-; nciclos[16]     ; Input ; Info     ; Stuck at GND ;
-; nciclos[15]     ; Input ; Info     ; Stuck at VCC ;
-; nciclos[14]     ; Input ; Info     ; Stuck at GND ;
-; nciclos[5]      ; Input ; Info     ; Stuck at VCC ;
-+-----------------+-------+----------+--------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "div_frec:div_servo"    ;
-+-----------------+-------+----------+--------------+
-; Port            ; Type  ; Severity ; Details      ;
-+-----------------+-------+----------+--------------+
-; nciclos[13..12] ; Input ; Info     ; Stuck at VCC ;
-; nciclos[7..6]   ; Input ; Info     ; Stuck at VCC ;
-; nciclos[31..14] ; Input ; Info     ; Stuck at GND ;
-; nciclos[11..8]  ; Input ; Info     ; Stuck at GND ;
-; nciclos[1..0]   ; Input ; Info     ; Stuck at GND ;
-; nciclos[5]      ; Input ; Info     ; Stuck at GND ;
-; nciclos[4]      ; Input ; Info     ; Stuck at VCC ;
-; nciclos[3]      ; Input ; Info     ; Stuck at GND ;
-; nciclos[2]      ; Input ; Info     ; Stuck at VCC ;
-+-----------------+-------+----------+--------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "div_frec:div_btn"      ;
-+-----------------+-------+----------+--------------+
-; Port            ; Type  ; Severity ; Details      ;
-+-----------------+-------+----------+--------------+
-; nciclos[17..16] ; Input ; Info     ; Stuck at VCC ;
-; nciclos[7..6]   ; Input ; Info     ; Stuck at VCC ;
-; nciclos[31..21] ; Input ; Info     ; Stuck at GND ;
-; nciclos[19..18] ; Input ; Info     ; Stuck at GND ;
-; nciclos[15..13] ; Input ; Info     ; Stuck at GND ;
-; nciclos[11..10] ; Input ; Info     ; Stuck at GND ;
-; nciclos[3..0]   ; Input ; Info     ; Stuck at GND ;
-; nciclos[20]     ; Input ; Info     ; Stuck at VCC ;
-; nciclos[12]     ; Input ; Info     ; Stuck at VCC ;
-; nciclos[9]      ; Input ; Info     ; Stuck at VCC ;
-; nciclos[8]      ; Input ; Info     ; Stuck at GND ;
-; nciclos[5]      ; Input ; Info     ; Stuck at GND ;
-; nciclos[4]      ; Input ; Info     ; Stuck at VCC ;
-+-----------------+-------+----------+--------------+
++-----------------------------------------+
+; Port Connectivity Checks: "ffJK:cont_0" ;
++------+-------+----------+---------------+
+; Port ; Type  ; Severity ; Details       ;
++------+-------+----------+---------------+
+; vin  ; Input ; Info     ; Stuck at VCC  ;
+; j    ; Input ; Info     ; Stuck at VCC  ;
+; k    ; Input ; Info     ; Stuck at VCC  ;
+; set  ; Input ; Info     ; Stuck at VCC  ;
++------+-------+----------+---------------+
 
 
 +-----------------------------------------------------+
@@ -455,22 +296,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 9                           ;
-; cycloneiii_ff         ; 95                          ;
-;     plain             ; 95                          ;
-; cycloneiii_lcell_comb ; 152                         ;
-;     arith             ; 82                          ;
-;         2 data inputs ; 79                          ;
-;         3 data inputs ; 3                           ;
-;     normal            ; 70                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 7                           ;
-;         2 data inputs ; 30                          ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 29                          ;
+; boundary_port         ; 7                           ;
+; cycloneiii_ff         ; 4                           ;
+;     CLR               ; 4                           ;
+; cycloneiii_lcell_comb ; 7                           ;
+;     normal            ; 7                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.20                        ;
-; Average LUT depth     ; 3.21                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 1.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -479,7 +316,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -489,66 +326,50 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed Jun 21 22:48:36 2023
+    Info: Processing started: Thu Jun 22 22:48:30 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off P-Automated-Farm -c P-Automated-Farm
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file main.vhd
-    Info (12022): Found design unit 1: main-cerebro File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 20
-    Info (12023): Found entity 1: main File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 7
+    Info (12022): Found design unit 1: main-cerebro File: C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/main.vhd Line: 20
+    Info (12023): Found entity 1: main File: C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/main.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file contador.vhd
-    Info (12022): Found design unit 1: contador-contar File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/contador.vhd Line: 16
-    Info (12023): Found entity 1: contador File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/contador.vhd Line: 7
+    Info (12022): Found design unit 1: contador-con File: C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/contador.vhd Line: 17
+    Info (12023): Found entity 1: contador File: C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/contador.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file ffjk.vhd
-    Info (12022): Found design unit 1: ffJK-memoria File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/ffJK.vhd Line: 22
-    Info (12023): Found entity 1: ffJK File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/ffJK.vhd Line: 6
+    Info (12022): Found design unit 1: ffJK-memoria File: C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/ffJK.vhd Line: 22
+    Info (12023): Found entity 1: ffJK File: C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/ffJK.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file div_frec.vhd
-    Info (12022): Found design unit 1: div_frec-divisor File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/div_frec.vhd Line: 21
-    Info (12023): Found entity 1: div_frec File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/div_frec.vhd Line: 7
+    Info (12022): Found design unit 1: div_frec-divisor File: C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/div_frec.vhd Line: 21
+    Info (12023): Found entity 1: div_frec File: C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/div_frec.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file anti_rebote.vhd
-    Info (12022): Found design unit 1: anti_rebote-registro File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/anti_rebote.vhd Line: 19
-    Info (12023): Found entity 1: anti_rebote File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/anti_rebote.vhd Line: 7
+    Info (12022): Found design unit 1: anti_rebote-registro File: C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/anti_rebote.vhd Line: 19
+    Info (12023): Found entity 1: anti_rebote File: C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/anti_rebote.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file senal_pwm.vhd
-    Info (12022): Found design unit 1: senal_PWM-control File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/senal_PWM.vhd Line: 16
-    Info (12023): Found entity 1: senal_PWM File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/senal_PWM.vhd Line: 7
+    Info (12022): Found design unit 1: senal_PWM-control File: C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/senal_PWM.vhd Line: 16
+    Info (12023): Found entity 1: senal_PWM File: C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/senal_PWM.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file ffd.vhd
-    Info (12022): Found design unit 1: ffD-state File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/ffD.vhd Line: 23
-    Info (12023): Found entity 1: ffD File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/ffD.vhd Line: 6
+    Info (12022): Found design unit 1: ffD-state File: C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/ffD.vhd Line: 23
+    Info (12023): Found entity 1: ffD File: C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/ffD.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file control_temp.vhd
-    Info (12022): Found design unit 1: control_temp-mux File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/control_temp.vhd Line: 17
-    Info (12023): Found entity 1: control_temp File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/control_temp.vhd Line: 7
-Info (12127): Elaborating entity "main" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at main.vhd(13): used implicit default value for signal "comedero" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 13
-Warning (10036): Verilog HDL or VHDL warning at main.vhd(23): object "buzz" assigned a value but never read File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 23
-Warning (10036): Verilog HDL or VHDL warning at main.vhd(29): object "f_cont" assigned a value but never read File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 29
-Warning (10036): Verilog HDL or VHDL warning at main.vhd(37): object "req_CA" assigned a value but never read File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 37
-Warning (10492): VHDL Process Statement warning at main.vhd(139): signal "servo_180" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 139
-Warning (10492): VHDL Process Statement warning at main.vhd(141): signal "servo_0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 141
-Warning (10492): VHDL Process Statement warning at main.vhd(154): signal "calor" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 154
-Info (12128): Elaborating entity "div_frec" for hierarchy "div_frec:div_btn" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 104
-Info (12128): Elaborating entity "anti_rebote" for hierarchy "anti_rebote:btn_c" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 108
-Info (12128): Elaborating entity "senal_PWM" for hierarchy "senal_PWM:alarm" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 109
-Info (12128): Elaborating entity "control_temp" for hierarchy "control_temp:f_calor" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 123
-Info (12128): Elaborating entity "ffD" for hierarchy "ffD:FQ0" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 125
-Warning (10492): VHDL Process Statement warning at ffD.vhd(33): signal "set" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/ffD.vhd Line: 33
-Warning (10492): VHDL Process Statement warning at ffD.vhd(35): signal "rst" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/ffD.vhd Line: 35
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "comedero" is stuck at GND File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 13
+    Info (12022): Found design unit 1: control_temp-mux File: C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/control_temp.vhd Line: 17
+    Info (12023): Found entity 1: control_temp File: C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/control_temp.vhd Line: 7
+Info (12127): Elaborating entity "contador" for the top level hierarchy
+Info (12128): Elaborating entity "ffJK" for hierarchy "ffJK:cont_0" File: C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/contador.vhd Line: 54
+Warning (10492): VHDL Process Statement warning at ffJK.vhd(37): signal "set" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/ffJK.vhd Line: 37
+Info (13000): Registers with preset signals will power-up high File: C:/Users/pipec/Documents/GitHub/P-Automated-Farm/VHDL/ffJK.vhd Line: 35
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "lluvia" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 12
-    Warning (15610): No output dependent on input pin "frio" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 12
-    Warning (15610): No output dependent on input pin "PIR" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 12
-Info (21057): Implemented 163 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 3 output pins
-    Info (21061): Implemented 154 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
-    Info: Peak virtual memory: 4783 megabytes
-    Info: Processing ended: Wed Jun 21 22:48:57 2023
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:35
+Info (21057): Implemented 13 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 5 output pins
+    Info (21061): Implemented 6 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4826 megabytes
+    Info: Processing ended: Thu Jun 22 22:48:37 2023
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:08
 
 
