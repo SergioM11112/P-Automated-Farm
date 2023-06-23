@@ -7,8 +7,8 @@ frio => ~NO_FANOUT~
 calor => FSM_C:fsm_0.C
 PIR => ~NO_FANOUT~
 puerta <= puerta.DB_MAX_OUTPUT_PORT_TYPE
-comedero <= comedero.DB_MAX_OUTPUT_PORT_TYPE
-alarma <= comb.DB_MAX_OUTPUT_PORT_TYPE
+comedero <= comb.DB_MAX_OUTPUT_PORT_TYPE
+alarma <= alarma.DB_MAX_OUTPUT_PORT_TYPE
 led <= div_frec:div_cont.f
 salida_ff[0] <= FSM_C:fsm_0.Q[0]
 salida_ff[1] <= FSM_C:fsm_0.Q[1]
@@ -183,7 +183,8 @@ Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|FSM_C:fsm_0
-clk => ~NO_FANOUT~
+clk => ffD:FQ0.clk
+clk => ffD:FQ1.clk
 C => D[0].IN1
 C => D.IN1
 Q[0] <= ffD:FQ0.Q

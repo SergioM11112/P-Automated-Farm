@@ -91,7 +91,7 @@ end component;
 
 
 --Señales frecuencias
-signal f_cont, f_ffD : std_logic;  							-- f_cont : frec. contador
+signal f_cont, f_ffD : std_logic:='0';  							-- f_cont : frec. contador
 signal f_FSM : std_logic_vector(1 downto 0) := "00";	-- f_ffD : frec. natural Flip flops de las FSM
 																		-- f_FSM : frec. interrumpida de FSM por sumador
 --Señales FSM 
@@ -120,6 +120,7 @@ salida_ff(1) <= not Qc(1);
  
 led <= not f_cont;
 
+alarma <= not (not Qc(1) and Qc(0));
 
 --------- Ordenes perifericos de salida ---------
 --process(req_P, req_CA)

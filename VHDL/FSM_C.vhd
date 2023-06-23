@@ -19,7 +19,6 @@ end FSM_C;
 
 architecture C of FSM_C is
 signal D, X : std_logic_vector(1 downto 0);
-signal f_FSM : std_logic; 
 
 component ffD is
 	port
@@ -43,8 +42,8 @@ D(0) <= C or (not X(1) and X(0)); 				-- entradas
 D(1) <= X(0) and (not X(1) or C);				-- Flip Flops
 
 
-FQ0 : ffD port map('0', D(0),'0','0', f_FSM, X(0)); --Flip-Flops
-FQ1 : ffD port map('0', D(1),'0','0', f_FSM, X(1));
+FQ0 : ffD port map('0', D(0),'0','0', clk, X(0)); --Flip-Flops
+FQ1 : ffD port map('0', D(1),'0','0', clk, X(1));
 
 Q <= (X(1), X(0));
 
