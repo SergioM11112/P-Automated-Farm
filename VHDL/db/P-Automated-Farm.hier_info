@@ -2,16 +2,16 @@
 clk => div_frec:div_cont.clk
 clk => div_frec:div_ffD.clk
 btn => ~NO_FANOUT~
-lluvia => ~NO_FANOUT~
-frio => ~NO_FANOUT~
+lluvia => FSM_LF:fsm_1.I[1]
+frio => FSM_LF:fsm_1.I[2]
 calor => FSM_C:fsm_0.C
-PIR => ~NO_FANOUT~
+PIR => FSM_LF:fsm_1.I[0]
 puerta <= puerta.DB_MAX_OUTPUT_PORT_TYPE
 comedero <= comb.DB_MAX_OUTPUT_PORT_TYPE
 alarma <= alarma.DB_MAX_OUTPUT_PORT_TYPE
 led <= div_frec:div_cont.f
-salida_ff[0] <= FSM_C:fsm_0.Q[0]
-salida_ff[1] <= FSM_C:fsm_0.Q[1]
+salida_ff[0] <= FSM_LF:fsm_1.Q[0]
+salida_ff[1] <= FSM_LF:fsm_1.Q[1]
 
 
 |main|div_frec:div_cont
@@ -205,6 +205,79 @@ Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|FSM_C:fsm_0|ffD:FQ1
+qin => ~NO_FANOUT~
+D => qout.DATAIN
+set => qout.PRESET
+set => qout.IN0
+rst => qout.IN1
+clk => qout.CLK
+Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador:cont_LF
+start => ff.IN0
+clk => ff.IN1
+sal <= sal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador:cont_LF|ffJK:cont_0
+Vin => ~NO_FANOUT~
+J => Mux0.IN4
+K => Mux0.IN5
+clk => qout.CLK
+Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador:cont_LF|ffJK:cont_1
+Vin => ~NO_FANOUT~
+J => Mux0.IN4
+K => Mux0.IN5
+clk => qout.CLK
+Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador:cont_LF|ffJK:cont_2
+Vin => ~NO_FANOUT~
+J => Mux0.IN4
+K => Mux0.IN5
+clk => qout.CLK
+Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador:cont_LF|ffJK:cont_3
+Vin => ~NO_FANOUT~
+J => Mux0.IN4
+K => Mux0.IN5
+clk => qout.CLK
+Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|FSM_LF:fsm_1
+clk => ffD:FFD_0.clk
+clk => ffD:FFD_1.clk
+I[0] => Di.IN1
+I[1] => Di.IN0
+I[1] => Di.IN0
+I[2] => Di.IN1
+I[2] => Di.IN1
+Q[0] <= ffD:FFD_0.Q
+Q[1] <= ffD:FFD_1.Q
+sal[0] <= sal.DB_MAX_OUTPUT_PORT_TYPE
+sal[1] <= sal.DB_MAX_OUTPUT_PORT_TYPE
+sal[2] <= ffD:FFD_0.Q
+
+
+|main|FSM_LF:fsm_1|ffD:FFD_0
+qin => ~NO_FANOUT~
+D => qout.DATAIN
+set => qout.PRESET
+set => qout.IN0
+rst => qout.IN1
+clk => qout.CLK
+Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|FSM_LF:fsm_1|ffD:FFD_1
 qin => ~NO_FANOUT~
 D => qout.DATAIN
 set => qout.PRESET

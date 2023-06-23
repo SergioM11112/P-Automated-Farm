@@ -3,15 +3,15 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -3.506
-TNS   : -139.025
+Slack : -3.540
+TNS   : -137.825
 
-Type  : Slow 1200mV 85C Model Setup 'FSM_C:fsm_0|ffD:FQ0|qout'
-Slack : -0.956
-TNS   : -1.734
+Type  : Slow 1200mV 85C Model Setup 'FSM_LF:fsm_1|ffD:FFD_0|qout'
+Slack : -1.020
+TNS   : -1.793
 
-Type  : Slow 1200mV 85C Model Hold 'FSM_C:fsm_0|ffD:FQ0|qout'
-Slack : 0.168
+Type  : Slow 1200mV 85C Model Hold 'FSM_LF:fsm_1|ffD:FFD_0|qout'
+Slack : 0.482
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
@@ -22,20 +22,20 @@ Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
 TNS   : -86.272
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FSM_C:fsm_0|ffD:FQ0|qout'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FSM_LF:fsm_1|ffD:FFD_0|qout'
 Slack : -1.487
 TNS   : -7.435
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -3.162
-TNS   : -122.965
+Slack : -3.134
+TNS   : -119.528
 
-Type  : Slow 1200mV 0C Model Setup 'FSM_C:fsm_0|ffD:FQ0|qout'
-Slack : -0.821
-TNS   : -1.219
+Type  : Slow 1200mV 0C Model Setup 'FSM_LF:fsm_1|ffD:FFD_0|qout'
+Slack : -0.908
+TNS   : -1.305
 
-Type  : Slow 1200mV 0C Model Hold 'FSM_C:fsm_0|ffD:FQ0|qout'
-Slack : 0.219
+Type  : Slow 1200mV 0C Model Hold 'FSM_LF:fsm_1|ffD:FFD_0|qout'
+Slack : 0.430
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
@@ -46,20 +46,20 @@ Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
 TNS   : -86.272
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FSM_C:fsm_0|ffD:FQ0|qout'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FSM_LF:fsm_1|ffD:FFD_0|qout'
 Slack : -1.487
 TNS   : -7.435
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -1.039
-TNS   : -32.075
+Slack : -1.008
+TNS   : -30.749
 
-Type  : Fast 1200mV 0C Model Setup 'FSM_C:fsm_0|ffD:FQ0|qout'
-Slack : 0.120
+Type  : Fast 1200mV 0C Model Setup 'FSM_LF:fsm_1|ffD:FFD_0|qout'
+Slack : 0.104
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'FSM_C:fsm_0|ffD:FQ0|qout'
-Slack : 0.000
+Type  : Fast 1200mV 0C Model Hold 'FSM_LF:fsm_1|ffD:FFD_0|qout'
+Slack : 0.124
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
@@ -68,9 +68,9 @@ TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -62.990
+TNS   : -62.765
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FSM_C:fsm_0|ffD:FQ0|qout'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FSM_LF:fsm_1|ffD:FFD_0|qout'
 Slack : -1.000
 TNS   : -5.000
 

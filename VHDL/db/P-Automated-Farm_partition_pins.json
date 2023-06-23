@@ -20,7 +20,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "calor",
+					"name" : "PIR",
+					"strict" : false
+				},
+				{
+					"name" : "frio",
+					"strict" : false
+				},
+				{
+					"name" : "lluvia",
 					"strict" : false
 				},
 				{
