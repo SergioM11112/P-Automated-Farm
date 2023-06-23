@@ -8,9 +8,9 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/simulation/modelsim
+Z0 dC:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/simulation/modelsim
 Econtador
-Z1 w1687284881
+Z1 w1687537470
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z4 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
@@ -18,34 +18,34 @@ Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 0
 R0
-Z7 8C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/contador.vhd
-Z8 FC:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/contador.vhd
+Z7 8C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/contador.vhd
+Z8 FC:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/contador.vhd
 l0
 L7 1
-VbI2nX2MmX3;Bg4^PjOnkJ0
-!s100 SCMKmHh01;nOmNhX2:lJV3
+VKjm0CE5HVFO:1AF6BS;^P0
+!s100 i5c8f57]?i9G8g?2QE8Al1
 Z9 OV;C;2020.1;71
 31
-Z10 !s110 1687285369
+Z10 !s110 1687537664
 !i10b 1
-Z11 !s108 1687285369.000000
-Z12 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/contador.vhd|
-Z13 !s107 C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/contador.vhd|
+Z11 !s108 1687537664.000000
+Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/contador.vhd|
+Z13 !s107 C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/contador.vhd|
 !i113 1
 Z14 o-93 -work work
 Z15 tExplicit 1 CvgOpt 0
-Acontar
+Acon
 R2
 R3
 R4
 R5
 R6
-DEx4 work 8 contador 0 22 bI2nX2MmX3;Bg4^PjOnkJ0
+DEx4 work 8 contador 0 22 Kjm0CE5HVFO:1AF6BS;^P0
 !i122 0
-l32
-L16 21
-Ve3]zkC[eh8oX88F57eD<M3
-!s100 l2JJRBjWC=MCe;d<j1=F51
+l34
+L17 37
+VBaSf[f0mLe<`kz_kLO81X2
+!s100 G7NoConA[ICj8J30N7M9B0
 R9
 31
 R10
@@ -56,27 +56,28 @@ R13
 !i113 1
 R14
 R15
+n6a5e
 Effjk
-Z16 w1687284877
+Z16 w1687537065
 R3
 R4
 R5
 R6
 !i122 1
 R0
-Z17 8C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/ffJK.vhd
-Z18 FC:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/ffJK.vhd
+Z17 8C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffJK.vhd
+Z18 FC:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffJK.vhd
 l0
 L6 1
-VSon]b]^kP4K:Uc[KEiIVB1
-!s100 XN5S0lJ0f1@`;7KUca8Y33
+VE6^b[?5C5hozbkF:<bPVL3
+!s100 :EomcOln8FiXYRNeH<zYD1
 R9
 31
 R10
 !i10b 1
 R11
-Z19 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/ffJK.vhd|
-!s107 C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/ffJK.vhd|
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffJK.vhd|
+!s107 C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffJK.vhd|
 !i113 1
 R14
 R15
@@ -85,19 +86,19 @@ R3
 R4
 R5
 R6
-DEx4 work 4 ffjk 0 22 Son]b]^kP4K:Uc[KEiIVB1
+DEx4 work 4 ffjk 0 22 E6^b[?5C5hozbkF:<bPVL3
 !i122 1
-l27
-L22 32
-V@RD@z4e;h:]:dngi_O@i02
-!s100 H2W5llmGff_4J=e6<A>N22
+l26
+L21 28
+VoMR_bTePcgMCBZ`AdbILK1
+!s100 3LG^1UTng]Z9:z^X<R^JI3
 R9
 31
 R10
 !i10b 1
 R11
 R19
-Z20 !s107 C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/ffJK.vhd|
+Z20 !s107 C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffJK.vhd|
 !i113 1
 R14
 R15

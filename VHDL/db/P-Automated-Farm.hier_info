@@ -12,9 +12,6 @@ Q[3] <= ffJK:cont_3.Q
 Vin => ~NO_FANOUT~
 J => Mux0.IN4
 K => Mux0.IN5
-set => qout.IN0
-rst => qout.IN1
-rst => qout.ACLR
 clk => qout.CLK
 Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -23,9 +20,6 @@ Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
 Vin => ~NO_FANOUT~
 J => Mux0.IN4
 K => Mux0.IN5
-set => qout.IN0
-rst => qout.IN1
-rst => qout.ACLR
 clk => qout.CLK
 Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -34,9 +28,6 @@ Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
 Vin => ~NO_FANOUT~
 J => Mux0.IN4
 K => Mux0.IN5
-set => qout.IN0
-rst => qout.IN1
-rst => qout.ACLR
 clk => qout.CLK
 Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
 
@@ -45,9 +36,6 @@ Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
 Vin => ~NO_FANOUT~
 J => Mux0.IN4
 K => Mux0.IN5
-set => qout.IN0
-rst => qout.IN1
-rst => qout.ACLR
 clk => qout.CLK
 Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
 
