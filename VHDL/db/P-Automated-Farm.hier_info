@@ -1,14 +1,156 @@
-|contador
+|main
+clk => div_frec:div_cont.clk
+clk => div_frec:div_ffD.clk
+btn => ~NO_FANOUT~
+lluvia => ~NO_FANOUT~
+frio => ~NO_FANOUT~
+calor => FSM_C:fsm_0.C
+PIR => ~NO_FANOUT~
+puerta <= puerta.DB_MAX_OUTPUT_PORT_TYPE
+comedero <= comedero.DB_MAX_OUTPUT_PORT_TYPE
+alarma <= comb.DB_MAX_OUTPUT_PORT_TYPE
+led <= div_frec:div_cont.f
+salida_ff[0] <= FSM_C:fsm_0.Q[0]
+salida_ff[1] <= FSM_C:fsm_0.Q[1]
+
+
+|main|div_frec:div_cont
+clk => cuenta[0].CLK
+clk => cuenta[1].CLK
+clk => cuenta[2].CLK
+clk => cuenta[3].CLK
+clk => cuenta[4].CLK
+clk => cuenta[5].CLK
+clk => cuenta[6].CLK
+clk => cuenta[7].CLK
+clk => cuenta[8].CLK
+clk => cuenta[9].CLK
+clk => cuenta[10].CLK
+clk => cuenta[11].CLK
+clk => cuenta[12].CLK
+clk => cuenta[13].CLK
+clk => cuenta[14].CLK
+clk => cuenta[15].CLK
+clk => cuenta[16].CLK
+clk => cuenta[17].CLK
+clk => cuenta[18].CLK
+clk => cuenta[19].CLK
+clk => cuenta[20].CLK
+clk => cuenta[21].CLK
+clk => cuenta[22].CLK
+clk => cuenta[23].CLK
+clk => cuenta[24].CLK
+clk => cuenta[25].CLK
+clk => cuenta[26].CLK
+clk => cuenta[27].CLK
+clk => salida.CLK
+Nciclos[0] => Equal0.IN35
+Nciclos[1] => Equal0.IN34
+Nciclos[2] => Equal0.IN33
+Nciclos[3] => Equal0.IN32
+Nciclos[4] => Equal0.IN31
+Nciclos[5] => Equal0.IN30
+Nciclos[6] => Equal0.IN29
+Nciclos[7] => Equal0.IN28
+Nciclos[8] => Equal0.IN27
+Nciclos[9] => Equal0.IN26
+Nciclos[10] => Equal0.IN25
+Nciclos[11] => Equal0.IN24
+Nciclos[12] => Equal0.IN23
+Nciclos[13] => Equal0.IN22
+Nciclos[14] => Equal0.IN21
+Nciclos[15] => Equal0.IN20
+Nciclos[16] => Equal0.IN19
+Nciclos[17] => Equal0.IN18
+Nciclos[18] => Equal0.IN17
+Nciclos[19] => Equal0.IN16
+Nciclos[20] => Equal0.IN15
+Nciclos[21] => Equal0.IN14
+Nciclos[22] => Equal0.IN13
+Nciclos[23] => Equal0.IN12
+Nciclos[24] => Equal0.IN11
+Nciclos[25] => Equal0.IN10
+Nciclos[26] => Equal0.IN9
+Nciclos[27] => Equal0.IN8
+Nciclos[28] => Equal0.IN7
+Nciclos[29] => Equal0.IN6
+Nciclos[30] => Equal0.IN5
+Nciclos[31] => Equal0.IN4
+f <= salida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|div_frec:div_ffD
+clk => cuenta[0].CLK
+clk => cuenta[1].CLK
+clk => cuenta[2].CLK
+clk => cuenta[3].CLK
+clk => cuenta[4].CLK
+clk => cuenta[5].CLK
+clk => cuenta[6].CLK
+clk => cuenta[7].CLK
+clk => cuenta[8].CLK
+clk => cuenta[9].CLK
+clk => cuenta[10].CLK
+clk => cuenta[11].CLK
+clk => cuenta[12].CLK
+clk => cuenta[13].CLK
+clk => cuenta[14].CLK
+clk => cuenta[15].CLK
+clk => cuenta[16].CLK
+clk => cuenta[17].CLK
+clk => cuenta[18].CLK
+clk => cuenta[19].CLK
+clk => cuenta[20].CLK
+clk => cuenta[21].CLK
+clk => cuenta[22].CLK
+clk => cuenta[23].CLK
+clk => cuenta[24].CLK
+clk => cuenta[25].CLK
+clk => cuenta[26].CLK
+clk => cuenta[27].CLK
+clk => salida.CLK
+Nciclos[0] => Equal0.IN35
+Nciclos[1] => Equal0.IN34
+Nciclos[2] => Equal0.IN33
+Nciclos[3] => Equal0.IN32
+Nciclos[4] => Equal0.IN31
+Nciclos[5] => Equal0.IN30
+Nciclos[6] => Equal0.IN29
+Nciclos[7] => Equal0.IN28
+Nciclos[8] => Equal0.IN27
+Nciclos[9] => Equal0.IN26
+Nciclos[10] => Equal0.IN25
+Nciclos[11] => Equal0.IN24
+Nciclos[12] => Equal0.IN23
+Nciclos[13] => Equal0.IN22
+Nciclos[14] => Equal0.IN21
+Nciclos[15] => Equal0.IN20
+Nciclos[16] => Equal0.IN19
+Nciclos[17] => Equal0.IN18
+Nciclos[18] => Equal0.IN17
+Nciclos[19] => Equal0.IN16
+Nciclos[20] => Equal0.IN15
+Nciclos[21] => Equal0.IN14
+Nciclos[22] => Equal0.IN13
+Nciclos[23] => Equal0.IN12
+Nciclos[24] => Equal0.IN11
+Nciclos[25] => Equal0.IN10
+Nciclos[26] => Equal0.IN9
+Nciclos[27] => Equal0.IN8
+Nciclos[28] => Equal0.IN7
+Nciclos[29] => Equal0.IN6
+Nciclos[30] => Equal0.IN5
+Nciclos[31] => Equal0.IN4
+f <= salida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador:cont_C
 start => ff.IN0
 clk => ff.IN1
 sal <= sal.DB_MAX_OUTPUT_PORT_TYPE
-Q[0] <= ffJK:cont_0.Q
-Q[1] <= ffJK:cont_1.Q
-Q[2] <= ffJK:cont_2.Q
-Q[3] <= ffJK:cont_3.Q
 
 
-|contador|ffJK:cont_0
+|main|contador:cont_C|ffJK:cont_0
 Vin => ~NO_FANOUT~
 J => Mux0.IN4
 K => Mux0.IN5
@@ -16,7 +158,7 @@ clk => qout.CLK
 Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|contador|ffJK:cont_1
+|main|contador:cont_C|ffJK:cont_1
 Vin => ~NO_FANOUT~
 J => Mux0.IN4
 K => Mux0.IN5
@@ -24,7 +166,7 @@ clk => qout.CLK
 Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|contador|ffJK:cont_2
+|main|contador:cont_C|ffJK:cont_2
 Vin => ~NO_FANOUT~
 J => Mux0.IN4
 K => Mux0.IN5
@@ -32,10 +174,41 @@ clk => qout.CLK
 Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|contador|ffJK:cont_3
+|main|contador:cont_C|ffJK:cont_3
 Vin => ~NO_FANOUT~
 J => Mux0.IN4
 K => Mux0.IN5
+clk => qout.CLK
+Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|FSM_C:fsm_0
+clk => ~NO_FANOUT~
+C => D[0].IN1
+C => D.IN1
+Q[0] <= ffD:FQ0.Q
+Q[1] <= ffD:FQ1.Q
+sal[0] <= sal.DB_MAX_OUTPUT_PORT_TYPE
+sal[1] <= sal.DB_MAX_OUTPUT_PORT_TYPE
+sal[2] <= ffD:FQ0.Q
+
+
+|main|FSM_C:fsm_0|ffD:FQ0
+qin => ~NO_FANOUT~
+D => qout.DATAIN
+set => qout.PRESET
+set => qout.IN0
+rst => qout.IN1
+clk => qout.CLK
+Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|FSM_C:fsm_0|ffD:FQ1
+qin => ~NO_FANOUT~
+D => qout.DATAIN
+set => qout.PRESET
+set => qout.IN0
+rst => qout.IN1
 clk => qout.CLK
 Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
 

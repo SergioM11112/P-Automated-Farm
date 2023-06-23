@@ -7,8 +7,8 @@ use ieee.numeric_std.all;
 entity contador is
 	port(
 		start,clk : in std_logic;
-		sal : out std_logic;
-		Q : out std_logic_vector(3 downto 0)
+		sal : out std_logic
+--		Q : out std_logic_vector(3 downto 0)
 	);
 
 end contador;
@@ -48,6 +48,6 @@ begin
     cont_2 : ffJK port map('0', JK(2), JK(2), ff, X(2));
     cont_3 : ffJK port map('0', JK(3), JK(3), ff, X(3));
 
-    Q <= X(3) & X(2) & X(1) & X(0);
+--    Q <= X(3) & X(2) & X(1) & X(0);
 	 sal <= ( X(3) and (not X(2)) and (not X(1)) and X(0));
 end con;

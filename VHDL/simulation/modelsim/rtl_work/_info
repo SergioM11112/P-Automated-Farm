@@ -10,25 +10,25 @@ z2
 cModel Technology
 Z0 dC:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/simulation/modelsim
 Econtador
-Z1 w1687537470
+Z1 w1687541793
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z4 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 0
+!i122 1
 R0
 Z7 8C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/contador.vhd
 Z8 FC:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/contador.vhd
 l0
 L7 1
-VKjm0CE5HVFO:1AF6BS;^P0
-!s100 i5c8f57]?i9G8g?2QE8Al1
+VU56><e3F5@GmWOOEN>RN41
+!s100 3S65kIIFjM<XGgIN9>OZ40
 Z9 OV;C;2020.1;71
 31
-Z10 !s110 1687537664
+Z10 !s110 1687553245
 !i10b 1
-Z11 !s108 1687537664.000000
+Z11 !s108 1687553245.000000
 Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/contador.vhd|
 Z13 !s107 C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/contador.vhd|
 !i113 1
@@ -40,12 +40,12 @@ R3
 R4
 R5
 R6
-DEx4 work 8 contador 0 22 Kjm0CE5HVFO:1AF6BS;^P0
-!i122 0
+DEx4 work 8 contador 0 22 U56><e3F5@GmWOOEN>RN41
+!i122 1
 l34
 L17 37
-VBaSf[f0mLe<`kz_kLO81X2
-!s100 G7NoConA[ICj8J30N7M9B0
+V3WY4dHk^fmkSka<k4cEmW0
+!s100 iTeTCN6;:BN`?FJIlnzJk3
 R9
 31
 R10
@@ -57,27 +57,119 @@ R13
 R14
 R15
 n6a5e
-Effjk
-Z16 w1687537065
+Ediv_frec
+Z16 w1687286241
+R2
 R3
 R4
 R5
 R6
-!i122 1
+!i122 3
 R0
-Z17 8C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffJK.vhd
-Z18 FC:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffJK.vhd
+Z17 8C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/div_frec.vhd
+Z18 FC:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/div_frec.vhd
+l0
+L7 1
+VT;nW`7HD2a?dmgOO1MCHD0
+!s100 Y>3[:H:8m<hJJHlP5mNYm0
+R9
+31
+Z19 !s110 1687553246
+!i10b 1
+Z20 !s108 1687553246.000000
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/div_frec.vhd|
+Z22 !s107 C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/div_frec.vhd|
+!i113 1
+R14
+R15
+Adivisor
+R2
+R3
+R4
+R5
+R6
+DEx4 work 8 div_frec 0 22 T;nW`7HD2a?dmgOO1MCHD0
+!i122 3
+l26
+L21 21
+VbSDCKaA?aU1RoPW9W327H0
+!s100 MU<^Oj`Zb_0@CO;;>Ih4E2
+R9
+31
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R14
+R15
+Effd
+Z23 w1687389294
+R3
+R4
+R5
+R6
+!i122 4
+R0
+Z24 8C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffD.vhd
+Z25 FC:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffD.vhd
+l0
+L6 1
+V4_QBIWG38W?6nWKZMi`Td1
+!s100 5=kH1GYdez;GPjBSVYiiK2
+R9
+31
+R19
+!i10b 1
+R20
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffD.vhd|
+Z27 !s107 C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffD.vhd|
+!i113 1
+R14
+R15
+Astate
+R3
+R4
+R5
+R6
+DEx4 work 3 ffd 0 22 4_QBIWG38W?6nWKZMi`Td1
+!i122 4
+l27
+L23 23
+V2o:kUaZT6D32a?dg69^ST2
+!s100 9Hg41fAISTY`X6HUGHhKD3
+R9
+31
+R19
+!i10b 1
+R20
+R26
+R27
+!i113 1
+R14
+R15
+Effjk
+Z28 w1687537065
+R3
+R4
+R5
+R6
+!i122 2
+R0
+Z29 8C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffJK.vhd
+Z30 FC:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffJK.vhd
 l0
 L6 1
 VE6^b[?5C5hozbkF:<bPVL3
 !s100 :EomcOln8FiXYRNeH<zYD1
 R9
 31
-R10
+R19
 !i10b 1
 R11
-Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffJK.vhd|
-!s107 C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffJK.vhd|
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffJK.vhd|
+Z32 !s107 C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffJK.vhd|
 !i113 1
 R14
 R15
@@ -87,18 +179,112 @@ R4
 R5
 R6
 DEx4 work 4 ffjk 0 22 E6^b[?5C5hozbkF:<bPVL3
-!i122 1
+!i122 2
 l26
 L21 28
 VoMR_bTePcgMCBZ`AdbILK1
 !s100 3LG^1UTng]Z9:z^X<R^JI3
 R9
 31
+R19
+!i10b 1
+R11
+R31
+R32
+!i113 1
+R14
+R15
+Efsm_c
+Z33 w1687543280
+R2
+R3
+R4
+R5
+R6
+!i122 5
+R0
+Z34 8C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/FSM_C.vhd
+Z35 FC:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/FSM_C.vhd
+l0
+L7 1
+VGzFBhEQP<:J38fLGdD_IZ3
+!s100 aXl=FW6II4D8f@gNJkimg3
+R9
+31
+R19
+!i10b 1
+R20
+Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/FSM_C.vhd|
+!s107 C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/FSM_C.vhd|
+!i113 1
+R14
+R15
+Ac
+R2
+R3
+R4
+R5
+R6
+DEx4 work 5 fsm_c 0 22 GzFBhEQP<:J38fLGdD_IZ3
+!i122 5
+l40
+L20 35
+V_87RFElNj;=d_ebSzD>431
+!s100 ?;4i<Wk>1MYC>n4Al?d;11
+R9
+31
+R19
+!i10b 1
+R20
+R36
+Z37 !s107 C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/FSM_C.vhd|
+!i113 1
+R14
+R15
+Emain
+Z38 w1687553051
+R2
+R3
+R4
+R5
+R6
+!i122 0
+R0
+Z39 8C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/main.vhd
+Z40 FC:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/main.vhd
+l0
+L7 1
+Vd58@CSJn3;;kmXH[@Llm_3
+!s100 CVjV_`O`k6Bb7OLP8M60[3
+R9
+31
 R10
 !i10b 1
 R11
-R19
-Z20 !s107 C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffJK.vhd|
+Z41 !s90 -reportprogress|300|-93|-work|work|C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/main.vhd|
+Z42 !s107 C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/main.vhd|
+!i113 1
+R14
+R15
+Acerebro
+R2
+R3
+R4
+R5
+R6
+DEx4 work 4 main 0 22 d58@CSJn3;;kmXH[@Llm_3
+!i122 0
+l102
+L23 125
+VHi[K7LjzdXiVVET]:cDJB0
+!s100 FQzOD]Gl_25i:AV8M9kje2
+R9
+31
+R10
+!i10b 1
+R11
+R41
+R42
 !i113 1
 R14
 R15

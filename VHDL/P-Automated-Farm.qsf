@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE10E22C8
-set_global_assignment -name TOP_LEVEL_ENTITY contador
+set_global_assignment -name TOP_LEVEL_ENTITY main
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:40:22  JUNE 20, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
@@ -64,15 +64,19 @@ set_global_assignment -name VHDL_FILE senal_PWM.vhd
 set_location_assignment PIN_23 -to clk
 set_location_assignment PIN_141 -to alarma
 set_global_assignment -name VHDL_FILE ffD.vhd
-set_global_assignment -name VHDL_FILE control_temp.vhd
-set_location_assignment PIN_58 -to btn
-set_location_assignment PIN_88 -to calor
-set_location_assignment PIN_32 -to comedero
-set_location_assignment PIN_33 -to frio
-set_location_assignment PIN_31 -to lluvia
-set_location_assignment PIN_38 -to PIR
-set_location_assignment PIN_30 -to puerta
+set_location_assignment PIN_90 -to btn
+set_location_assignment PIN_58 -to calor
+set_location_assignment PIN_30 -to comedero
+set_location_assignment PIN_32 -to frio
+set_location_assignment PIN_34 -to lluvia
+set_location_assignment PIN_39 -to PIR
+set_location_assignment PIN_42 -to puerta
+set_global_assignment -name VHDL_FILE FSM_LF.vhd
+set_global_assignment -name VHDL_FILE FSM_C.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_69 -to salida_ff[1]
+set_location_assignment PIN_70 -to salida_ff[0]
+set_location_assignment PIN_75 -to led
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

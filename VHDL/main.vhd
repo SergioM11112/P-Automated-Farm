@@ -10,7 +10,10 @@ entity main is
 	clk,btn : in std_logic;
 	
 	lluvia, frio, calor, PIR : in std_logic;
-	puerta, comedero, alarma : out std_logic
+	puerta, comedero, alarma, led : out std_logic;
+	
+	--Señales de prueba
+	salida_ff : out std_logic_vector(1 downto 0)
 	
 	);
 
@@ -18,25 +21,6 @@ end main;
 
 
 architecture cerebro of main is
-----------------------------------SEÑALES DE PRUEBA----------------------------------
-
-signal f_btn, f_servo, f_buzz, servo_0, servo_180, bto, buzz : std_logic;
-
-
-
-
---Señales contador
-signal f_cont : std_logic;
-signal f_ffD : std_logic_vector(1 downto 0); --(0) previo control (1) frecuencia controlada
-
----- Señales FSM ----
-signal Dc, Qc: std_logic_vector(1 downto 0);  --entrada(D) y salida(Q) flip flop tipo D para controlar calor
-
-
----- Señales verificación salida ----
-signal req_P, req_CA: std_logic_vector(1 downto 0);	-- Almacena si se cumplen requerimientos 
-																		-- para las salidas
-
 
 -- Componentes ---------------------------------
 component div_frec
@@ -87,70 +71,77 @@ component ffD
 	
 end component;
 
-
-component control_temp
-
+component contador
 	port(
-		f, s_cont: in std_logic;
-		s_control : in std_logic;
+		start,clk : in std_logic;
+		sal : out std_logic
+	);
 
-		f_control : out std_logic) ;
-		
 end component;
 
+component FSM_C 
+   port (
+	clk, C : in std_logic; 
+	  
+	Q     : out std_logic_vector(1 downto 0);  
+	sal   : out std_logic_vector (2 downto 0)
+	-- S(2)=Puerta; S(1)=Comida; S(0)=Alarma.  
+    );
+end component;
+
+
+--Señales frecuencias
+signal f_cont, f_ffD : std_logic;  							-- f_cont : frec. contador
+signal f_FSM : std_logic_vector(1 downto 0) := "00";	-- f_ffD : frec. natural Flip flops de las FSM
+																		-- f_FSM : frec. interrumpida de FSM por sumador
+--Señales FSM 
+signal Qc, Qlf, contar: std_logic_vector(1 downto 0):="00";	--Qc => estado FSM calor
+signal Sc ,Slf : std_logic_vector(2 downto 0) :="000";																		--Qlf => estado FSM lluvia - frio 
+signal s_cont : std_logic:='0';
+	
 begin
-------------------------------------SECCION DE PRUEBAS------------------------------------
-			--Perifericos de salida
-div_btn : div_frec port map(clk, 1250000, f_btn);		--Boton
-div_servo : div_frec port map(clk, 12500, f_servo);	--Servomotor
-div_buzz : div_frec port map(clk, 12500000, f_buzz);		--Buzzer
-
-btn_c : anti_rebote port map(f_btn, btn, bto);
-alarm : senal_PWM port map(f_buzz, 3, 2, buzz);
-sServo1 : senal_PWM port map(f_servo, 40, 1, servo_0);
-sServo2 : senal_PWM port map(f_servo, 40, 5, servo_180);
-
 
 -------- Divisores de frecuencia --------
-div_1 : div_frec port map(clk, 12500000, f_ffD(0));	-- f_ffD => cada 0.5 seg
-div_2 : div_frec port map(clk, 25000000, f_cont);	-- f_cont => cada 1 seg
+div_cont : div_frec port map(clk, 25000000, f_cont);	-- f_cont => cada 1 seg
+--div_ffD : div_frec port map(clk, 12500000, f_ffD); 	-- f_ffD => cada 0.5 seg
+div_ffD : div_frec port map(clk, 125000000, f_ffD);		-- f_ffD => cada 5 seg
+
+-------- FSM calor --------
+cont_C : contador port map(contar(0), f_cont,s_cont);
 
 
--------- Máquina FSM - Estado calor --------
-Dc(0) <= calor or (not Qc(1) and Qc(0)); 				-- Definición compuertas de 
-Dc(1) <= Qc(0) and (not Qc(1) or calor);				-- entrada
+contar(0) <=  Qc(0) and not Qc(1);
+f_FSM(0) <= (contar(0) and s_cont) or (not contar(0) and f_ffD);
+fsm_0 : FSM_C port map(f_FSM(0), calor, Qc, Sc);
 
-f_calor : control_temp port map(f_ffD(0), bto, bto, f_ffD(1));
 
-FQ0 : ffD port map('0', Dc(0),'0','0', f_ffD(1), Qc(0)); --Flip-Flops
-FQ1 : ffD port map('0', Dc(1),'0','0', f_ffD(1), Qc(1));
-
-req_P(0) <= Qc(0);
-req_CA(0) <= not Qc(1) and Qc(0);
-
+salida_ff(0) <= not Qc(0);
+salida_ff(1) <= not Qc(1);
+ 
+led <= not f_cont;
 
 
 --------- Ordenes perifericos de salida ---------
-process(req_P, req_CA)
-
-begin
-	--------Puerta--------
-	if(req_P(0) = '1') then
-		puerta <= servo_180;
-	else 
-		puerta <= servo_0;
-	end if;
-	
-	--------Comedero y alarma--------
-	
---	if(req_CA(0) = '1') then
---		comedero <= servo_180;
---		alarma <= buzz;
---	else
---		comedero <= servo_0;
---		alarma <= '1';
+--process(req_P, req_CA)
+--
+--begin
+--	--------Puerta--------
+--	if(req_P(0) = '1') then
+--		puerta <= servo_180;
+--	else 
+--		puerta <= servo_0;
 --	end if;
 --	
-alarma<= not calor;
-end process;
+--	--------Comedero y alarma--------
+--	
+----	if(req_CA(0) = '1') then
+----		comedero <= servo_180;
+----		alarma <= buzz;
+----	else
+----		comedero <= servo_0;
+----		alarma <= '1';
+----	end if;
+----	
+--alarma<= not calor;
+--end process;
 end cerebro;

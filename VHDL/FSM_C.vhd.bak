@@ -1,0 +1,38 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+
+entity FSM_C is
+    port (
+	  --Inputs ---
+	  C : in std_logic; --Calor
+	  FSM_C : out
+	  
+    );
+end FSM_LF;
+
+architecture LF of FSM_LF is
+	
+
+component ffD is
+	port
+	(
+		-- Input ports
+		qin: in	std_logic;
+		D	: in  std_logic;
+		set: in  std_logic;
+		rst: in  std_logic;
+		clk: in	std_logic;
+
+		-- Output ports
+		Q	: out std_logic);
+end component;
+
+
+
+begin
+
+ 
+end LF;
