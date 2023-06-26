@@ -16,15 +16,16 @@ end contador;
 
 architecture con of contador is
 
-signal ff : std_logic:='0';
+signal ff,rst : std_logic:='0';
 signal X, JK : std_logic_vector(3 downto 0) := "0000"; 
 
 component ffJK
 	port
-		(
+	(
 		-- Input ports
 		Vin: in std_logic;
 		J,K: in  std_logic;
+		set, rst: in std_logic;
 		clk: in	std_logic;
 
 		-- Output ports
@@ -38,16 +39,16 @@ begin
 
     -- Contador 10 seg
     JK(0) <= '1';
-    JK(1) <= X(0) and not X(3) ;
-    JK(2) <= X(0) and X(1) ;
-    JK(3) <= (X(0) and X(1) and X(2)) or (X(0) and X(3)) ;
+    JK(1) <= X(0);
+    JK(2) <= X(0) and X(1);
+    JK(3) <= X(0) and X(1) and X(2);
 
 
-    cont_0 : ffJK port map('0', JK(0), JK(0), ff, X(0));
-    cont_1 : ffJK port map('0', JK(1), JK(1), ff, X(1));
-    cont_2 : ffJK port map('0', JK(2), JK(2), ff, X(2));
-    cont_3 : ffJK port map('0', JK(3), JK(3), ff, X(3));
+    cont_0 : ffJK port map('0', JK(0), JK(0),'0',rst, ff, X(0));
+    cont_1 : ffJK port map('0', JK(1), JK(1),'0',rst, ff, X(1));
+    cont_2 : ffJK port map('0', JK(2), JK(2),'0',rst, ff, X(2));
+    cont_3 : ffJK port map('0', JK(3), JK(3),'0',rst, ff, X(3));
 
---    Q <= X(3) & X(2) & X(1) & X(0);
-	 sal <= ( X(3) and (not X(2)) and (not X(1)) and X(0));
+   rst <= X(3) and not X(2) and X(1) and X(0);
+	 sal <= X(3) and not X(2) and X(1) and X(0);
 end con;

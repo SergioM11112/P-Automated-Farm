@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Fri Jun 23 17:17:12 2023
+Analysis & Synthesis Status : Successful - Mon Jun 26 14:43:42 2023
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : P-Automated-Farm
 Top-level Entity Name : main
 Family : Cyclone IV E
-Total logic elements : 112
-    Total combinational functions : 112
-    Dedicated logic registers : 62
-Total registers : 62
+Total logic elements : 230
+    Total combinational functions : 226
+    Dedicated logic registers : 132
+Total registers : 132
 Total pins : 12
 Total virtual pins : 0
 Total memory bits : 0

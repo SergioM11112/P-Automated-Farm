@@ -3,75 +3,267 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -3.540
-TNS   : -137.825
+Slack : -4.898
+TNS   : -295.151
+
+Type  : Slow 1200mV 85C Model Setup 'div_frec:div_servo|salida'
+Slack : -1.891
+TNS   : -11.172
 
 Type  : Slow 1200mV 85C Model Setup 'FSM_LF:fsm_1|ffD:FFD_0|qout'
-Slack : -1.020
-TNS   : -1.793
+Slack : -0.900
+TNS   : -1.439
+
+Type  : Slow 1200mV 85C Model Setup 'anti_rebote:btn_rst|bto'
+Slack : -0.404
+TNS   : -0.404
+
+Type  : Slow 1200mV 85C Model Setup 'div_frec:div_btn|salida'
+Slack : -0.332
+TNS   : -0.491
+
+Type  : Slow 1200mV 85C Model Setup 'FSM_C:fsm_0|ffD:FQ0|qout'
+Slack : -0.273
+TNS   : -0.538
+
+Type  : Slow 1200mV 85C Model Hold 'FSM_C:fsm_0|ffD:FQ0|qout'
+Slack : -0.207
+TNS   : -0.207
 
 Type  : Slow 1200mV 85C Model Hold 'FSM_LF:fsm_1|ffD:FFD_0|qout'
-Slack : 0.482
+Slack : 0.123
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_frec:div_servo|salida'
+Slack : 0.454
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
 Slack : 0.485
 TNS   : 0.000
 
+Type  : Slow 1200mV 85C Model Hold 'div_frec:div_btn|salida'
+Slack : 0.493
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'anti_rebote:btn_rst|bto'
+Slack : 0.931
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'FSM_LF:fsm_1|ffD:FFD_0|qout'
+Slack : -1.311
+TNS   : -5.238
+
+Type  : Slow 1200mV 85C Model Recovery 'FSM_C:fsm_0|ffD:FQ0|qout'
+Slack : -1.247
+TNS   : -4.984
+
+Type  : Slow 1200mV 85C Model Removal 'FSM_C:fsm_0|ffD:FQ0|qout'
+Slack : 0.501
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'FSM_LF:fsm_1|ffD:FFD_0|qout'
+Slack : 1.577
+TNS   : 0.000
+
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -86.272
+TNS   : -159.135
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_frec:div_servo|salida'
+Slack : -1.487
+TNS   : -13.383
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FSM_C:fsm_0|ffD:FQ0|qout'
+Slack : -1.487
+TNS   : -7.435
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FSM_LF:fsm_1|ffD:FFD_0|qout'
 Slack : -1.487
 TNS   : -7.435
 
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_frec:div_btn|salida'
+Slack : -1.487
+TNS   : -7.435
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'anti_rebote:btn_rst|bto'
+Slack : -1.487
+TNS   : -1.487
+
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -3.134
-TNS   : -119.528
+Slack : -4.571
+TNS   : -264.443
+
+Type  : Slow 1200mV 0C Model Setup 'div_frec:div_servo|salida'
+Slack : -1.612
+TNS   : -9.200
 
 Type  : Slow 1200mV 0C Model Setup 'FSM_LF:fsm_1|ffD:FFD_0|qout'
-Slack : -0.908
-TNS   : -1.305
+Slack : -0.757
+TNS   : -1.045
+
+Type  : Slow 1200mV 0C Model Setup 'anti_rebote:btn_rst|bto'
+Slack : -0.290
+TNS   : -0.290
+
+Type  : Slow 1200mV 0C Model Setup 'div_frec:div_btn|salida'
+Slack : -0.197
+TNS   : -0.245
+
+Type  : Slow 1200mV 0C Model Setup 'FSM_C:fsm_0|ffD:FQ0|qout'
+Slack : -0.146
+TNS   : -0.286
+
+Type  : Slow 1200mV 0C Model Hold 'FSM_C:fsm_0|ffD:FQ0|qout'
+Slack : -0.294
+TNS   : -0.294
 
 Type  : Slow 1200mV 0C Model Hold 'FSM_LF:fsm_1|ffD:FFD_0|qout'
-Slack : 0.430
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_frec:div_servo|salida'
+Slack : 0.402
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
 Slack : 0.430
 TNS   : 0.000
 
+Type  : Slow 1200mV 0C Model Hold 'div_frec:div_btn|salida'
+Slack : 0.456
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'anti_rebote:btn_rst|bto'
+Slack : 0.850
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'FSM_LF:fsm_1|ffD:FFD_0|qout'
+Slack : -1.097
+TNS   : -4.381
+
+Type  : Slow 1200mV 0C Model Recovery 'FSM_C:fsm_0|ffD:FQ0|qout'
+Slack : -1.034
+TNS   : -4.132
+
+Type  : Slow 1200mV 0C Model Removal 'FSM_C:fsm_0|ffD:FQ0|qout'
+Slack : 0.489
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'FSM_LF:fsm_1|ffD:FFD_0|qout'
+Slack : 1.451
+TNS   : 0.000
+
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -86.272
+TNS   : -159.135
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_frec:div_servo|salida'
+Slack : -1.487
+TNS   : -13.383
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FSM_C:fsm_0|ffD:FQ0|qout'
+Slack : -1.487
+TNS   : -7.435
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FSM_LF:fsm_1|ffD:FFD_0|qout'
 Slack : -1.487
 TNS   : -7.435
 
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_frec:div_btn|salida'
+Slack : -1.487
+TNS   : -7.435
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'anti_rebote:btn_rst|bto'
+Slack : -1.487
+TNS   : -1.487
+
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -1.008
-TNS   : -30.749
+Slack : -1.484
+TNS   : -71.075
+
+Type  : Fast 1200mV 0C Model Setup 'div_frec:div_servo|salida'
+Slack : -0.451
+TNS   : -0.856
 
 Type  : Fast 1200mV 0C Model Setup 'FSM_LF:fsm_1|ffD:FFD_0|qout'
-Slack : 0.104
+Slack : 0.163
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FSM_C:fsm_0|ffD:FQ0|qout'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'div_frec:div_btn|salida'
+Slack : 0.420
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'anti_rebote:btn_rst|bto'
+Slack : 0.427
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'FSM_LF:fsm_1|ffD:FFD_0|qout'
-Slack : 0.124
+Slack : -0.013
+TNS   : -0.013
+
+Type  : Fast 1200mV 0C Model Hold 'FSM_C:fsm_0|ffD:FQ0|qout'
+Slack : 0.063
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div_frec:div_servo|salida'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div_frec:div_btn|salida'
+Slack : 0.197
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
 Slack : 0.201
 TNS   : 0.000
 
+Type  : Fast 1200mV 0C Model Hold 'anti_rebote:btn_rst|bto'
+Slack : 0.395
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'FSM_LF:fsm_1|ffD:FFD_0|qout'
+Slack : -0.008
+TNS   : -0.029
+
+Type  : Fast 1200mV 0C Model Recovery 'FSM_C:fsm_0|ffD:FQ0|qout'
+Slack : 0.018
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'FSM_C:fsm_0|ffD:FQ0|qout'
+Slack : 0.533
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'FSM_LF:fsm_1|ffD:FFD_0|qout'
+Slack : 0.670
+TNS   : 0.000
+
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -62.765
+TNS   : -114.772
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_frec:div_servo|salida'
+Slack : -1.000
+TNS   : -9.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FSM_C:fsm_0|ffD:FQ0|qout'
+Slack : -1.000
+TNS   : -5.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FSM_LF:fsm_1|ffD:FFD_0|qout'
 Slack : -1.000
 TNS   : -5.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_frec:div_btn|salida'
+Slack : -1.000
+TNS   : -5.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'anti_rebote:btn_rst|bto'
+Slack : -1.000
+TNS   : -1.000
 
 ------------------------------------------------------------

@@ -17,11 +17,11 @@ entity FSM_LF is
 		
 		--Output ports
 		Q     : out std_logic_vector(1 downto 0);
-		sal   : out std_logic_vector (2 downto 0)
+		sal   : out std_logic_vector (1 downto 0)
 		
 		-- Sal representa las salidas de nuestro circuito 
 		--redefinidas en la linea siguiente:
-		-- S(2)=Puerta; S(1)=Comida; S(0)=Alarma.  
+		-- S(1)=Puerta; S(0)=Comida/alarma
     );
 end FSM_LF;
 
@@ -61,7 +61,6 @@ begin
     Q <= X(1) & X(0); -- Visualizamos los estados del circuito. 
 
 -- visualizamos las salidas de nuestro sistema. 
-	sal(2) <= X(0);
-	sal(1) <= X(0) and not X(1);
+	sal(1) <= X(0);
 	sal(0) <= X(0) and not X(1); 
 end LF;

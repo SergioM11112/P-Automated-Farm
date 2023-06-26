@@ -10,6 +10,7 @@ entity ffJK is
 		-- Input ports
 		Vin: in std_logic;
 		J,K: in  std_logic;
+		set, rst: in std_logic;
 		clk: in	std_logic;
 
 		-- Output ports
@@ -27,11 +28,15 @@ begin
 
 	JK <= J & K;
 
-	process(clk)
+	process(clk,rst)
 
 	begin
 		
-		if rising_edge(clk) then 
+		if rst = '1' then 
+			qout <= '0';
+		elsif set = '1' then 
+			qout <= '1';
+		elsif rising_edge(clk) then
 			qout <= qin;
 		end if;
 		

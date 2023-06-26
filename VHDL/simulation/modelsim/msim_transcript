@@ -10,10 +10,10 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/main.vhd}
+# vcom -93 -work work {C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:47:25 on Jun 23,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/main.vhd 
+# Start time: 23:19:05 on Jun 24,2023
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -22,96 +22,20 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity main
 # -- Compiling architecture cerebro of main
-# End time: 15:47:25 on Jun 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/contador.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:47:25 on Jun 23,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/contador.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity contador
-# -- Compiling architecture con of contador
-# End time: 15:47:25 on Jun 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffJK.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:47:25 on Jun 23,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffJK.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity ffJK
-# -- Compiling architecture memoria of ffJK
-# ** Warning: C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffJK.vhd(23): (vcom-1013) Initial value of "qin" depends on value of signal "Vin".
-# ** Warning: C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffJK.vhd(23): (vcom-1013) Initial value of "qout" depends on value of signal "Vin".
-# End time: 15:47:26 on Jun 23,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 2
-# vcom -93 -work work {C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/div_frec.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:47:26 on Jun 23,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/div_frec.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity div_frec
-# -- Compiling architecture divisor of div_frec
-# End time: 15:47:26 on Jun 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffD.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:47:26 on Jun 23,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffD.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity ffD
-# -- Compiling architecture state of ffD
-# ** Warning: C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/ffD.vhd(25): (vcom-1013) Initial value of "qout" depends on value of signal "qin".
-# End time: 15:47:26 on Jun 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# vcom -93 -work work {C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/FSM_C.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:47:26 on Jun 23,2023
-# vcom -reportprogress 300 -93 -work work C:/Users/aleja/OneDrive/Escritorio/Proyecto final/P-Automated-Farm/VHDL/FSM_C.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity FSM_C
-# -- Compiling architecture C of FSM_C
-# End time: 15:47:26 on Jun 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
+# ** Error: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd(138): (vcom-1436) Actual expression (aggregate) of formal "I" is not globally static.
+# ** Note: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd(163): VHDL Compiler exiting
+# End time: 23:19:05 on Jun 24,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./P-Automated-Farm_run_msim_rtl_vhdl.do line 8
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd}"
 vsim work.main
 # vsim work.main 
-# Start time: 15:47:36 on Jun 23,2023
+# Start time: 23:19:23 on Jun 24,2023
 # Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading ieee.numeric_std(body)
-# Loading work.main(cerebro)
-# Loading work.div_frec(divisor)
-# Loading work.contador(con)
-# Loading work.ffjk(memoria)
-# Loading work.fsm_c(c)
-# Loading work.ffd(state)
-wave create -driver freeze -pattern counter -startvalue 0 -endvalue 1 -type Range -direction Up -period 400ps -step 1 -repeat forever -starttime 0ps -endtime 15000ps sim:/main/calor
-# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
-# End time: 15:48:18 on Jun 23,2023, Elapsed time: 0:00:42
-# Errors: 0, Warnings: 0
+# ** Error: (vsim-3173) Entity 'C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/simulation/modelsim/rtl_work.main' has no architecture.
+# Error loading design
+# End time: 23:19:24 on Jun 24,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0

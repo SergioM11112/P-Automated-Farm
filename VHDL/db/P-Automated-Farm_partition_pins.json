@@ -4,6 +4,10 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "puerta",
+					"strict" : false
+				},
+				{
 					"name" : "alarma",
 					"strict" : false
 				},
@@ -20,6 +24,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
 					"name" : "PIR",
 					"strict" : false
 				},
@@ -32,7 +40,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "calor",
+					"strict" : false
+				},
+				{
+					"name" : "btn",
 					"strict" : false
 				}
 			]
