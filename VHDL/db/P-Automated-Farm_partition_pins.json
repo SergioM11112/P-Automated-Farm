@@ -8,19 +8,11 @@
 					"strict" : false
 				},
 				{
+					"name" : "comedero",
+					"strict" : false
+				},
+				{
 					"name" : "alarma",
-					"strict" : false
-				},
-				{
-					"name" : "led",
-					"strict" : false
-				},
-				{
-					"name" : "salida_ff[0]",
-					"strict" : false
-				},
-				{
-					"name" : "salida_ff[1]",
 					"strict" : false
 				},
 				{

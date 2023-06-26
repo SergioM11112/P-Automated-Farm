@@ -9,11 +9,8 @@ frio => FSM_LF:fsm_1.I[2]
 calor => FSM_C:fsm_0.C
 PIR => FSM_LF:fsm_1.I[0]
 puerta << senal_PWM:sServo1.PWM
-comedero << comb.DB_MAX_OUTPUT_PORT_TYPE
+comedero << senal_PWM:sServo2.PWM
 alarma << alarma.DB_MAX_OUTPUT_PORT_TYPE
-led << ffD:pulsador.Q
-salida_ff[0] << FSM_C:fsm_0.Q[0]
-salida_ff[1] << FSM_C:fsm_0.Q[1]
 
 
 |main|anti_rebote:btn_rst
@@ -454,6 +451,26 @@ Q <= qout.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|senal_PWM:sServo1
+f_pwm => lim[0].CLK
+f_pwm => lim[1].CLK
+f_pwm => lim[2].CLK
+f_pwm => lim[3].CLK
+f_pwm => lim[4].CLK
+f_pwm => lim[5].CLK
+f_pwm => lim[6].CLK
+f_pwm => cont[0].CLK
+f_pwm => cont[1].CLK
+f_pwm => cont[2].CLK
+f_pwm => cont[3].CLK
+f_pwm => cont[4].CLK
+f_pwm => cont[5].CLK
+f_pwm => cont[6].CLK
+f_pwm => Y.CLK
+estado => lim[2].DATAIN
+PWM <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|senal_PWM:sServo2
 f_pwm => lim[0].CLK
 f_pwm => lim[1].CLK
 f_pwm => lim[2].CLK

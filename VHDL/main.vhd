@@ -10,10 +10,7 @@ entity main is
 	clk,btn : in std_logic;
 	
 	lluvia, frio, calor, PIR : in std_logic;
-	puerta, comedero, alarma, led : out std_logic;
-	
-	--Señales de prueba
-	salida_ff : out std_logic_vector(1 downto 0)
+	puerta, comedero, alarma : out std_logic
 	
 	);
 
@@ -144,15 +141,11 @@ cont_LF : contador port map(contar(1), f_cont,s_cont(1));
 contar(1) <=  not Qlf(1) and Qlf(0);
 f_FSM(1) <= (contar(1) and s_cont(1)) or (not contar(1) and f_ffD);
 fsm_1 : FSM_LF port map(f_FSM(1), (frio, lluvia, PIR), Qlf, Slf);
-
-
-led <= not abrir;
-salida_ff(0) <= not Qc(0);
-salida_ff(1) <= not Qc(1);
  
 
 --------- Definicion servo y buzzer ---------
 sServo1 : senal_PWM port map(f_servo, Sc(1) or Slf(1), puerta);
+sServo2 : senal_PWM port map(f_servo, Sc(0) or Slf(0), comedero);
 
 pulsador : ffD port map('0', not abrir, '0','0',bto,abrir);
 

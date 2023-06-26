@@ -1,5 +1,5 @@
 Analysis & Synthesis report for P-Automated-Farm
-Mon Jun 26 14:43:42 2023
+Mon Jun 26 15:08:45 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -58,16 +58,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jun 26 14:43:42 2023       ;
+; Analysis & Synthesis Status        ; Successful - Mon Jun 26 15:08:45 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; P-Automated-Farm                            ;
 ; Top-level Entity Name              ; main                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 230                                         ;
-;     Total combinational functions  ; 226                                         ;
-;     Dedicated logic registers      ; 132                                         ;
-; Total registers                    ; 132                                         ;
-; Total pins                         ; 12                                          ;
+; Total logic elements               ; 232                                         ;
+;     Total combinational functions  ; 228                                         ;
+;     Dedicated logic registers      ; 134                                         ;
+; Total registers                    ; 134                                         ;
+; Total pins                         ; 9                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -200,30 +200,30 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 230       ;
+; Estimated Total logic elements              ; 232       ;
 ;                                             ;           ;
-; Total combinational functions               ; 226       ;
+; Total combinational functions               ; 228       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 45        ;
+;     -- 4 input functions                    ; 47        ;
 ;     -- 3 input functions                    ; 16        ;
 ;     -- <=2 input functions                  ; 165       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 115       ;
+;     -- normal mode                          ; 117       ;
 ;     -- arithmetic mode                      ; 111       ;
 ;                                             ;           ;
-; Total registers                             ; 132       ;
-;     -- Dedicated logic registers            ; 132       ;
+; Total registers                             ; 134       ;
+;     -- Dedicated logic registers            ; 134       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 12        ;
+; I/O pins                                    ; 9         ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 105       ;
-; Total fan-out                               ; 839       ;
-; Average fan-out                             ; 2.20      ;
+; Total fan-out                               ; 848       ;
+; Average fan-out                             ; 2.23      ;
 +---------------------------------------------+-----------+
 
 
@@ -232,7 +232,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+-------------+--------------+
-; |main                      ; 226 (4)             ; 132 (0)                   ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |main                              ; main        ; work         ;
+; |main                      ; 228 (6)             ; 134 (0)                   ; 0           ; 0            ; 0       ; 0         ; 9    ; 0            ; |main                              ; main        ; work         ;
 ;    |FSM_C:fsm_0|           ; 3 (3)               ; 2 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|FSM_C:fsm_0                  ; FSM_C       ; work         ;
 ;       |ffD:FQ0|            ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|FSM_C:fsm_0|ffD:FQ0          ; ffD         ; work         ;
 ;       |ffD:FQ1|            ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|FSM_C:fsm_0|ffD:FQ1          ; ffD         ; work         ;
@@ -255,7 +255,8 @@ https://fpgasoftware.intel.com/eula.
 ;    |div_frec:div_ffD|      ; 48 (48)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|div_frec:div_ffD             ; div_frec    ; work         ;
 ;    |div_frec:div_servo|    ; 43 (43)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|div_frec:div_servo           ; div_frec    ; work         ;
 ;    |ffD:pulsador|          ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ffD:pulsador                 ; ffD         ; work         ;
-;    |senal_PWM:sServo1|     ; 16 (16)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|senal_PWM:sServo1            ; senal_PWM   ; work         ;
+;    |senal_PWM:sServo1|     ; 15 (15)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|senal_PWM:sServo1            ; senal_PWM   ; work         ;
+;    |senal_PWM:sServo2|     ; 1 (1)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|senal_PWM:sServo2            ; senal_PWM   ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -265,8 +266,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+-----------------------------------------+
 ; Register name                          ; Reason for Removal                      ;
 +----------------------------------------+-----------------------------------------+
+; senal_PWM:sServo2|lim[1,3..6]          ; Stuck at GND due to stuck port data_in  ;
+; senal_PWM:sServo2|lim[0]               ; Stuck at VCC due to stuck port data_in  ;
 ; senal_PWM:sServo1|lim[1,3..6]          ; Stuck at GND due to stuck port data_in  ;
 ; senal_PWM:sServo1|lim[0]               ; Stuck at VCC due to stuck port data_in  ;
+; senal_PWM:sServo2|cont[6]              ; Merged with senal_PWM:sServo1|cont[6]   ;
+; senal_PWM:sServo2|cont[5]              ; Merged with senal_PWM:sServo1|cont[5]   ;
+; senal_PWM:sServo2|cont[4]              ; Merged with senal_PWM:sServo1|cont[4]   ;
+; senal_PWM:sServo2|cont[3]              ; Merged with senal_PWM:sServo1|cont[3]   ;
+; senal_PWM:sServo2|cont[2]              ; Merged with senal_PWM:sServo1|cont[2]   ;
+; senal_PWM:sServo2|cont[1]              ; Merged with senal_PWM:sServo1|cont[1]   ;
+; senal_PWM:sServo2|cont[0]              ; Merged with senal_PWM:sServo1|cont[0]   ;
 ; div_frec:div_ffD|cuenta[0]             ; Merged with div_frec:div_cont|cuenta[0] ;
 ; div_frec:div_btn|cuenta[0]             ; Merged with div_frec:div_cont|cuenta[0] ;
 ; div_frec:div_servo|cuenta[0]           ; Merged with div_frec:div_cont|cuenta[0] ;
@@ -278,7 +288,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; div_frec:div_btn|cuenta[3]             ; Merged with div_frec:div_ffD|cuenta[3]  ;
 ; div_frec:div_ffD|cuenta[3]             ; Merged with div_frec:div_cont|cuenta[3] ;
 ; div_frec:div_ffD|cuenta[4]             ; Merged with div_frec:div_cont|cuenta[4] ;
-; Total Number of Removed Registers = 17 ;                                         ;
+; Total Number of Removed Registers = 30 ;                                         ;
 +----------------------------------------+-----------------------------------------+
 
 
@@ -287,12 +297,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 132   ;
+; Total registers                              ; 134   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 10    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 2     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -486,23 +496,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 12                          ;
-; cycloneiii_ff         ; 132                         ;
+; boundary_port         ; 9                           ;
+; cycloneiii_ff         ; 134                         ;
 ;     CLR               ; 10                          ;
+;     ENA               ; 2                           ;
 ;     plain             ; 122                         ;
 ; cycloneiii_lcell_comb ; 228                         ;
 ;     arith             ; 111                         ;
 ;         2 data inputs ; 108                         ;
 ;         3 data inputs ; 3                           ;
 ;     normal            ; 117                         ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 11                          ;
+;         1 data inputs ; 10                          ;
 ;         2 data inputs ; 47                          ;
 ;         3 data inputs ; 13                          ;
-;         4 data inputs ; 45                          ;
+;         4 data inputs ; 47                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.40                        ;
-; Average LUT depth     ; 3.19                        ;
+; Average LUT depth     ; 3.18                        ;
 +-----------------------+-----------------------------+
 
 
@@ -521,12 +531,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Jun 26 14:43:26 2023
+    Info: Processing started: Mon Jun 26 15:08:30 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off P-Automated-Farm -c P-Automated-Farm
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file main.vhd
-    Info (12022): Found design unit 1: main-cerebro File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 23
+    Info (12022): Found design unit 1: main-cerebro File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 20
     Info (12023): Found entity 1: main File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file contador.vhd
     Info (12022): Found design unit 1: contador-con File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/contador.vhd Line: 17
@@ -553,36 +563,33 @@ Info (12021): Found 2 design units, including 1 entities, in source file fsm_c.v
     Info (12022): Found design unit 1: FSM_C-C File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/FSM_C.vhd Line: 20
     Info (12023): Found entity 1: FSM_C File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/FSM_C.vhd Line: 7
 Info (12127): Elaborating entity "main" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at main.vhd(13): used implicit default value for signal "comedero" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 13
-Info (12128): Elaborating entity "anti_rebote" for hierarchy "anti_rebote:btn_rst" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 122
-Info (12128): Elaborating entity "div_frec" for hierarchy "div_frec:div_cont" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 126
-Info (12128): Elaborating entity "contador" for hierarchy "contador:cont_C" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 132
+Info (12128): Elaborating entity "anti_rebote" for hierarchy "anti_rebote:btn_rst" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 119
+Info (12128): Elaborating entity "div_frec" for hierarchy "div_frec:div_cont" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 123
+Info (12128): Elaborating entity "contador" for hierarchy "contador:cont_C" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 129
 Info (12128): Elaborating entity "ffJK" for hierarchy "contador:cont_C|ffJK:cont_0" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/contador.vhd Line: 47
 Warning (10492): VHDL Process Statement warning at ffJK.vhd(37): signal "set" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/ffJK.vhd Line: 37
-Info (12128): Elaborating entity "FSM_C" for hierarchy "FSM_C:fsm_0" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 137
+Info (12128): Elaborating entity "FSM_C" for hierarchy "FSM_C:fsm_0" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 134
 Info (12128): Elaborating entity "ffD" for hierarchy "FSM_C:fsm_0|ffD:FQ0" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/FSM_C.vhd Line: 45
 Warning (10492): VHDL Process Statement warning at ffD.vhd(33): signal "set" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/ffD.vhd Line: 33
 Warning (10492): VHDL Process Statement warning at ffD.vhd(35): signal "rst" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/ffD.vhd Line: 35
-Info (12128): Elaborating entity "FSM_LF" for hierarchy "FSM_LF:fsm_1" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 146
-Info (12128): Elaborating entity "senal_PWM" for hierarchy "senal_PWM:sServo1" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 155
+Info (12128): Elaborating entity "FSM_LF" for hierarchy "FSM_LF:fsm_1" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 143
+Info (12128): Elaborating entity "senal_PWM" for hierarchy "senal_PWM:sServo1" File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 147
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer f_FSM[1]~0 File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 108
-    Warning (19017): Found clock multiplexer f_FSM[0]~1 File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 108
+    Warning (19017): Found clock multiplexer f_FSM[1]~0 File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 105
+    Warning (19017): Found clock multiplexer f_FSM[0]~1 File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 105
 Info (13000): Registers with preset signals will power-up high File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/ffD.vhd Line: 33
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "comedero" is stuck at GND File: C:/intelFPGA_lite/20.1/proyects/P-Automated-Farm/main.vhd Line: 13
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 242 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 241 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 230 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4785 megabytes
-    Info: Processing ended: Mon Jun 26 14:43:42 2023
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:31
+    Info (21059): Implemented 3 output pins
+    Info (21061): Implemented 232 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4782 megabytes
+    Info: Processing ended: Mon Jun 26 15:08:45 2023
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:36
 
 
