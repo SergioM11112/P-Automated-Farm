@@ -86,8 +86,11 @@ Funcionamiento de los servos:
 ![pruebas](Imágenes/Pruebas/Prueba.jpeg)
 
 A continuación se observa la prueba de montaje de la puerta:
-![pruebas](Imágenes/Pruebas/Prueba_Puerta.mp4)
+[pruebas](Imágenes/Pruebas/Prueba_Puerta.mp4)
 
+[test](https://github.com/SergioM11112/P-Automated-Farm/raw/main/Im%C3%A1genes/Pruebas/Prueba_Puerta.mp4)
+
+[pruebas](Imágenes/Pruebas/Prueba_Puerta.mp4)
 
 ## Video del funcionamiento
 Para visualizar el video por favor copee el link que se observa a continuación:
