@@ -65,7 +65,7 @@ Imágenes/Diag_estados_V1.jpeg
 
 
 ### FMS Calor
-![Sim- FMS Calor]()
+![Sim- FMS Calor](Imágenes/Simulaciones/Sim_FSM_calor.png)
 
 ### FMS con tiempo
 ![Sim- FMS Calor con tiempo](Imágenes/Simulaciones/Sim_FSM_C_y_tiempo.png)
