@@ -84,6 +84,7 @@ El marco legal y regulatorio puede afectar la implementación de soluciones tecn
 La legislación laboral puede influir en la mano de obra disponible para la agricultura y la ganadería, lo que puede afectar la productividad y la rentabilidad de los productores. Además, las regulaciones laborales pueden impactar en la automatización y en la implementación de soluciones tecnológicas.
 
 Las regulaciones ambientales pueden influir en las prácticas agrícolas y ganaderas y en la implementación de soluciones tecnológicas sostenibles. Las regulaciones ambientales pueden ser restrictivas o promotoras de prácticas sostenibles, lo que afectará a los pequeños y medianos productores rurales.
+
 ## Diagrama de Caja Negra
 ![texto alternativo](Imágenes/Diagrama_de_cajas.png)  
 
@@ -113,6 +114,7 @@ Las regulaciones ambientales pueden influir en las prácticas agrícolas y ganad
 ## Desarrollo proyecto
 
 ### Diseño Inicial
+
 Para porder implemetar de manera más sencilla y visual cada uno de los 
 sensores como también los actuadores, se decidió construir una maqueta de 
 una granja, la cual su diseño inicial se realizo en Minecraft donde cada cubo hace
