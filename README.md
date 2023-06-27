@@ -39,7 +39,7 @@ Universidad Nacional de Colombia
 
 A lo largo de este repositorio en **GitHub** se exhibirán una serie documentos, archivos de audio y video, archivos en VHDL y otra serie de elementos que condensan el trabajo realizado por parte de algunos estudiantes de la *Universidad Nacional de Colombia*, para la asignatura de *Electrónica Digital I- semestre 2023-1*, el cuál se enfocó en el desarrollo de un sistema de protección para animales de granja (especifícamente para granjas lecheras) en caso de estar expuestos a situaciones climáticas extremas,  el cuál tiene por nombre ***Granja Automatizada***. De manera que sea posible poner en práctica los conocimientos adquiridos a lo largo del curso en contextos dónde es de gran importancia su implementación, como lo es el el sector agropecuario de Colombia, influyendo así en la revolución tecnológica en el campo. 
 
-### Identificación del Problema y alcance
+## Identificación del Problema y alcance
 
 El cambio climático ha sido uno de las mayores problemáticas a lo largo de los últimos años.Y, como consecuencia de esto, las condiciones climáticas han presentado variaciones significativas al punto de  exponer a los seres vivos a condiciones extremas de temperatura que perjudican su bienestar. 
 
