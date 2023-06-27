@@ -48,9 +48,8 @@ Estas situaciones han provocado a su vez diversas afecciones en sectores de gran
 Por este motivo, y con el fin de contrarrestar estos efectos, se pensó en desarrollar un sistema de protección automático para los animales de granja (específicamente para aquellos animales que pertenecen al sector ganadero y lechero) que los resguarde ante cambios climáticos que puedan afectarlos.
 
 ## Diagrama de Caja Negra
+![texto alternativo](Imágenes/Diagramadecajas.png)  
 
-![imágen diagrama de caja negra](Imágenes/Diagrama de cajas.png)
-![imágen del proyecto](Imágenes/Proyecto.png)
 
 
 ## Diagrama de Flujo de la solución
