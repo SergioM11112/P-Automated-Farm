@@ -49,10 +49,10 @@ Por este motivo, y con el fin de contrarrestar estos efectos, se pensó en desar
 
 ## Diagrama de Caja Negra
 
-![imágen diagrama de caja negra](Imágenes/Proyecto.png)
+![imágen diagrama de caja negra](Imágenes/Diagrama de cajas.png)
 
 ## Diagrama de Flujo de la solución
-![imágen diagrama de flujo d](Imágenes/Proyecto.png)
+![imágen diagrama de flujo](Imágenes/Diagrama de Flujo-Proyecto (1).png)
 
 ## Diagrama de estados (Máquina de estados) ---FALTA
 ![imágen del proyecto](Imágenes/Proyecto.png)
@@ -60,6 +60,17 @@ Por este motivo, y con el fin de contrarrestar estos efectos, se pensó en desar
 ## Simulaciones 
 
 
+### FMS Calor
+![Sim- FMS Calor](Imágenes/Simulaciones/Simulacion FSM calor.png)
+
+### FMS con tiempo
+![Sim- FMS Calor con tiempo](Imágenes/Simulaciones/Simulacion FSM_C y tiempo.png)
+
+### FMS Lluvia-Frío
+![Sim- FMS Lluvia](Imágenes/Simulaciones/Simulación lluvia-frío.jpg)
+
+### Contador Vista general
+![Sim- contador](Imágenes/Simulaciones/Vista general contador.png)
 
 
 ***Algunos links de apoyo***
