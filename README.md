@@ -1,8 +1,5 @@
 # Granja Automatizada
-Imágenes/Proyecto.png
-## Descripción General
-
-A lo largo de este repositorio en **GitHub** se exhibirán una serie documentos, archivos de audio y video, archivos en VHDL y otra serie de elementos que condensan el trabajo realizado por parte de algunos estudiantes de la *Universidad Nacional de Colombia*, para la asignatura de *Electrónica Digital I- semestre 2023-1*, el cuál se enfocó en el desarrollo de una ***Granja lechera Automatizada***. De manera que sea posible poner en práctica los conocimientos adquiridos a lo largo del curso en contextos dónde es de gran importancia su implementación, como lo es el el sector agropecuario de Colombia, influyendo así en la revolución tecnológica en el campo. 
+![imágen del proyecto](Imágenes/Proyecto.png)
 
 # Contenido
 ## Presentación equipo de Trabajo
@@ -38,23 +35,29 @@ Ingeniería Eléctrica y Electrónica
 
 Universidad Nacional de Colombia
 
+## Descripción General
 
+A lo largo de este repositorio en **GitHub** se exhibirán una serie documentos, archivos de audio y video, archivos en VHDL y otra serie de elementos que condensan el trabajo realizado por parte de algunos estudiantes de la *Universidad Nacional de Colombia*, para la asignatura de *Electrónica Digital I- semestre 2023-1*, el cuál se enfocó en el desarrollo de un sistema de protección para animales de granja (especifícamente para granjas lecheras) en caso de estar expuestos a situaciones climáticas extremas,  el cuál tiene por nombre ***Granja Automatizada***. De manera que sea posible poner en práctica los conocimientos adquiridos a lo largo del curso en contextos dónde es de gran importancia su implementación, como lo es el el sector agropecuario de Colombia, influyendo así en la revolución tecnológica en el campo. 
 
-## Planteamiento del Problema
+### Identificación del Problema y alcance
 
-### Antecedentes e identificación del Problema
-Desde que se desarrolló la revolución industrial en el siglo XVIII, grandes cantidades de campesinos se han tenido que desplazar a las zonas urbanas en búsqueda de mejores oportunidades de vida. Este fenómeno se expandió a Colombia pero la problemática se ha visto agravada a causa del cambio climático y los conflictos armados.
+El cambio climático ha sido uno de las mayores problemáticas a lo largo de los últimos años.Y, como consecuencia de esto, las condiciones climáticas han presentado variaciones significativas al punto de  exponer a los seres vivos a condiciones extremas de temperatura que perjudican su bienestar. 
 
-Esta situación ha generado grandes problemas en los sectores agrario y agropecuario; ya que se ha observado que para los pequeños y medianos productores es más difícil mantener la producción de alimentos y animales con una mano de obra que progresivamente es más escasa y costosa, por lo que muchos productores al no ver rentable la actividad deciden recoger sus maletas y ser parte de las estadísticas de migración o quedarse en los campos a costa de su bienestar, situación alarmante que aumenta los índices de pobreza y amplía la brecha de desigualdad social. 
+Estas situaciones han provocado a su vez diversas afecciones en sectores de gran importancia económica para nuestra nación como lo es el sector agropecuario, pues varios ganaderos, lecheros y demás promotores de la producción animal han sido los más perjudicados debido a la poca adaptación de muchas de sus especies a estos cambios climáticos. Llegando a provocar un sin número de enfermedades y pérdidas económicas, impidiendo un progreso efectivo para el sector del agro colombiano. 
 
-Por tanto y para contrarrestar un poco estos efectos se pensó en desarrollar una granja semi-automatizada, de tal manera que el pequeño productor tenga a su disposición una alternativa tecnológica que le permitirá mantener sus niveles de producción y un mayor grado de libertad para desarrollar otras actividades económicas beneficiosas.
+Por este motivo, y con el fin de contrarrestar estos efectos, se pensó en desarrollar un sistema de protección automático para los animales de granja (específicamente para aquellos animales que pertenecen al sector ganadero y lechero) que los resguarde ante cambios climáticos que puedan afectarlos.
 
+## Diagrama de Caja Negra
+
+![imágen del proyecto](Imágenes/Proyecto.png)
 
 
 ***Algunos links de apoyo***
-+ Migración: Yendo del campo a la ciudad por elección | International Organization for Migration (iom.int)
+
++ https://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0301-732X2008000100002#:~:text=El%20clima%20afecta%20al%20ganado,y%20el%20uso%20de%20%C3%A9sta
 + https://es.statista.com/estadisticas/1337047/valor-de-la-produccion-agricola-en-colombia/
 + https://portalechero.com/colombia-que-esta-pasando-en-realidad-con-la-produccion-de-leche-cual-es-su-futuro/
+
 
 
 ## Presupuesto
