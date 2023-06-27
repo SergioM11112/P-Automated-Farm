@@ -76,9 +76,9 @@ La falta de infraestructura, los altos costos de la tecnología y la falta de fi
 La implementación de tecnologías puede requerir una mayor inversión en capacitación y recursos humanos para asegurar su correcta implementación y uso por parte de los pequeños y medianos productores rurales.
 
 La tecnología puede ser una solución para aumentar la productividad y rentabilidad en la agricultura y la ganadería, pero también puede generar una dependencia tecnológica y limitar la diversificación de las actividades económicas en las zonas rurales.
-###Ambiental
+### Ambiental
 Los impactos del cambio climático, como la desertificación, la erosión del suelo, la sequía y las inundaciones, pueden afectar la disponibilidad, la calidad ,la productividad y rentabilidad de los pequeños y medianos productores rurales. Además, la falta de prácticas sostenibles y la explotación intensiva de los recursos naturales pueden afectar la biodiversidad y el equilibrio ecológico de las zonas rurales.
-###Legal
+### Legal
 El marco legal y regulatorio puede afectar la implementación de soluciones tecnológicas y la adopción de prácticas sostenibles en la agricultura y la ganadería. Las políticas gubernamentales pueden ser restrictivas o promotoras de tecnologías y prácticas sostenibles, lo que afectará a los pequeños y medianos productores rurales.
 
 La legislación laboral puede influir en la mano de obra disponible para la agricultura y la ganadería, lo que puede afectar la productividad y la rentabilidad de los productores. Además, las regulaciones laborales pueden impactar en la automatización y en la implementación de soluciones tecnológicas.
