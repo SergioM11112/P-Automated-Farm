@@ -76,6 +76,10 @@ Por este motivo, y con el fin de contrarrestar estos efectos, se pensó en desar
 ## Desarrollo proyecto
 
 ### Diseño Inicial
+Para porder implemetar de manera más sencilla y visual cada uno de los 
+sensores como también los actuadores, se decidió construir una maqueta de 
+una granja, la cual su diseño inicial se realizo en Minecraft donde cada cubo hace
+la representación de 1 cm en la realidad. 
 ![Montaje 1](Imágenes/Pruebas/Idea_1.png)
 ![Montaje 1_1](Imágenes/Pruebas/Ida_1.1.png)
 ![Montaje 1_2](Imágenes/Pruebas/Ida_1.2.png)
