@@ -50,31 +50,36 @@ Por este motivo, y con el fin de contrarrestar estos efectos, se pensó en desar
 ## Diagrama de Caja Negra
 ![texto alternativo](Imágenes/Diagrama_de_cajas.png)  
 
+Imágenes/Diagrama_de_cajas.png
+Imágenes/Diagrama_de_Flujo_Proyecto.png
+Imágenes/Diag_estados_V1.jpeg
 
 
 ## Diagrama de Flujo de la solución
-![imágen diagrama de flujo](Imágenes/Diagrama de Flujo-Proyecto (1).png)
+![imágen diagrama de flujo](Imágenes/Diagrama_de_Flujo_Proyecto.png)
 
-## Diagrama de estados (Máquina de estados) ---FALTA
-![imágen del proyecto](Imágenes/Proyecto.png)
+## Diagrama de estados (Máquina de estados) 
+![imágen del proyecto estados](Imágenes/Diag_estados_V1.jpeg)
 
 ## Simulaciones 
 
 
 ### FMS Calor
-![Sim- FMS Calor](Imágenes/Simulaciones/Simulacion FSM calor.png)
+![Sim- FMS Calor](Imágenes/Simulaciones/Imágenes/Simulaciones/Sim_FSM_calor.png)
 
 ### FMS con tiempo
-![Sim- FMS Calor con tiempo](Imágenes/Simulaciones/Simulacion FSM_C y tiempo.png)
+![Sim- FMS Calor con tiempo](Imágenes/Simulaciones/Sim_FSM_C_y_tiempo.png)
 
 ### FMS Lluvia-Frío
-![Sim- FMS Lluvia](Imágenes/Simulaciones/Simulación lluvia-frío.jpg)
+![Sim- FMS Lluvia](Imágenes/Simulaciones/Sim_lluvia-frío.jpg)
 
 ### Contador Vista general
-![Sim- contador](Imágenes/Simulaciones/Vista general contador.png)
+![Sim- contador](Imágenes/Simulaciones/Vista_general_contador.png)
 
+##Video
+https://youtu.be/dM4KYdypnsU
 
-***Algunos links de apoyo***
+##Referencias
 
 + https://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0301-732X2008000100002#:~:text=El%20clima%20afecta%20al%20ganado,y%20el%20uso%20de%20%C3%A9sta
 + https://es.statista.com/estadisticas/1337047/valor-de-la-produccion-agricola-en-colombia/
@@ -82,9 +87,6 @@ Por este motivo, y con el fin de contrarrestar estos efectos, se pensó en desar
 
 
 
-## Presupuesto
-
-INSERTE TABLA DE PRESUPUESTOS AQUÍ
 
 
 
