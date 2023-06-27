@@ -50,10 +50,6 @@ Por este motivo, y con el fin de contrarrestar estos efectos, se pensó en desar
 ## Diagrama de Caja Negra
 ![texto alternativo](Imágenes/Diagrama_de_cajas.png)  
 
-Imágenes/Diagrama_de_cajas.png
-Imágenes/Diagrama_de_Flujo_Proyecto.png
-Imágenes/Diag_estados_V1.jpeg
-
 
 ## Diagrama de Flujo de la solución
 ![imágen diagrama de flujo](Imágenes/Diagrama_de_Flujo_Proyecto.png)
@@ -77,7 +73,25 @@ Imágenes/Diag_estados_V1.jpeg
 ![Sim- contador](Imágenes/Simulaciones/Vista_general_contador.png)
 
 
-## Video
+## Desarrollo proyecto
+
+### Diseño Inicial
+![Montaje 1](Imágenes/Pruebas/Idea_1.png)
+![Montaje 1_1](Imágenes/Pruebas/Ida_1.1.png)
+![Montaje 1_2](Imágenes/Pruebas/Ida_1.2.png)
+
+### Pruebas de montaje
+
+Funcionamiento de los servos:
+![pruebas](Imágenes/Pruebas/Prueba.jpeg)
+
+A continuación se observa la prueba de montaje de la puerta:
+![pruebas](Imágenes/Pruebas/Prueba_Puerta.mp4)
+
+
+## Video del funcionamiento
+Para visualizar el video por favor copee el link que se observa a continuación:
+
 https://youtu.be/dM4KYdypnsU
 
 ## Referencias
