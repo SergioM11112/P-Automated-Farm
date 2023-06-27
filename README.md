@@ -50,6 +50,8 @@ Por este motivo, y con el fin de contrarrestar estos efectos, se pensó en desar
 ## Diagrama de Caja Negra
 
 ![imágen diagrama de caja negra](Imágenes/Diagrama de cajas.png)
+![imágen del proyecto](Imágenes/Proyecto.png)
+
 
 ## Diagrama de Flujo de la solución
 ![imágen diagrama de flujo](Imágenes/Diagrama de Flujo-Proyecto (1).png)
