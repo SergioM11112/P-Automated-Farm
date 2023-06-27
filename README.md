@@ -51,7 +51,9 @@ La agricultura ha sido uno de los mayores contribuyentes en materia de crecimien
 ## Realice el análisis PESTAL del problema
 ### Político
 El desarrollo de una reforma agraria por parte del actual gobierno de manera que su implementación no sea instantánea si no que, por el contrario, pueda extenderse a períodos presidenciales posteriores y el sector agropecuario  .
+
 Establecimiento de algún mecanismo de control económico como por ejemplo algún  impuesto.
+
 La implementación de normas y resoluciones asociadas al sector agropecuario podrían limitar las acciones que el campesino común puede ejercer, de manera que exista una ligera restricción a la libertad en su forma de trabajar.
 ### Economico 
 Incrementos en la inflación podrían provocar aumentos en los precios de ciertos insumos que contribuyen a la producción de bienes, de manera que las cadenas productivas podrían verse afectadas y con ello las relaciones comerciales entre los actores económicos. 
