@@ -46,7 +46,8 @@ El cambio climático ha sido uno de las mayores problemáticas a lo largo de los
 Estas situaciones han provocado a su vez diversas afecciones en sectores de gran importancia económica para nuestra nación como lo es el sector agropecuario, pues varios ganaderos, lecheros y demás promotores de la producción animal han sido los más perjudicados debido a la poca adaptación de muchas de sus especies a estos cambios climáticos. Llegando a provocar un sin número de enfermedades y pérdidas económicas, impidiendo un progreso efectivo para el sector del agro colombiano. 
 
 Por este motivo, y con el fin de contrarrestar estos efectos, se pensó en desarrollar un sistema de protección automático para los animales de granja (específicamente para aquellos animales que pertenecen al sector ganadero y lechero) que los resguarde ante cambios climáticos que puedan afectarlos.
-
+## Antecedentes 
+La agricultura ha sido uno de los mayores contribuyentes en materia de crecimiento económico del país a lo largo de los años, lo que ha permitido que Colombia sea un país cuyos bienes provengan en gran medida de la tierra y el tratamiento que se le da a esta . Sin embargo, su lugar e importancia en el sector económico se ha visto perjudicada debido a la poca competitividad que esta representa a comparación con el mercado exterior, pues la poca profundización en materia tecnológica ha hecho de este un sector algo obsoleto. Sin embargo, debido a los desarrollos tecnológicos y la facilidad de acceso a estos, ha sido posible idear prácticas y métodos que mezclen ambos mundos de manera que el campesino común no vea inalcanzable la posibilidad de competir y/o hacer parte de los principales contribuyentes en la cadena de producción de bienes. 
 ## Diagrama de Caja Negra
 ![texto alternativo](Imágenes/Diagrama_de_cajas.png)  
 
