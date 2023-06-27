@@ -76,10 +76,11 @@ Imágenes/Diag_estados_V1.jpeg
 ### Contador Vista general
 ![Sim- contador](Imágenes/Simulaciones/Vista_general_contador.png)
 
-##Video
+
+## Video
 https://youtu.be/dM4KYdypnsU
 
-##Referencias
+## Referencias
 
 + https://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0301-732X2008000100002#:~:text=El%20clima%20afecta%20al%20ganado,y%20el%20uso%20de%20%C3%A9sta
 + https://es.statista.com/estadisticas/1337047/valor-de-la-produccion-agricola-en-colombia/
