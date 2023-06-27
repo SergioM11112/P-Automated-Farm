@@ -80,9 +80,11 @@ Para porder implemetar de manera más sencilla y visual cada uno de los
 sensores como también los actuadores, se decidió construir una maqueta de 
 una granja, la cual su diseño inicial se realizo en Minecraft donde cada cubo hace
 la representación de 1 cm en la realidad. 
+
 ![Montaje 1](Imágenes/Pruebas/Idea_1.png)
 En la anterior imagen se puede observar la parte frontal donde se pueden ver el 
-PIR como los servomotores de la puerta 
+PIR como los servomotores de la puerta:
+
 ![Montaje 1_1](Imágenes/Pruebas/Ida_1.1.png)
 ![Montaje 1_2](Imágenes/Pruebas/Ida_1.2.png)
 Las 2 imágenes anteriores se presenta una primera organización de todo lo necesario 
