@@ -63,7 +63,7 @@ Tras la migración de la población más joven, las zonas rurales quedarán habi
 El aumento de la inseguridad a causa de la criminalidad por parte de inmigrantes extranjeros y la presencia de grupos armados  genera el desplazamiento de la población en búsqueda de una mejor calidad de vida.
 A largo plazo las zonas rurales estarán más deshabitadas debido al descenso en la tasa de natalidad por la preferencia de las parejas actuales en no tener hijos.
 
-###Tecnológico
+### Tecnológico
 La falta de infraestructura, los altos costos de la tecnología y la falta de financiamiento pueden limitar la adquisición de herramientas y tecnologías necesarias para mejorar la productividad y la rentabilidad en la agricultura y la ganadería.
 La implementación de tecnologías puede requerir una mayor inversión en capacitación y recursos humanos para asegurar su correcta implementación y uso por parte de los pequeños y medianos productores rurales.
 La tecnología puede ser una solución para aumentar la productividad y rentabilidad en la agricultura y la ganadería, pero también puede generar una dependencia tecnológica y limitar la diversificación de las actividades económicas en las zonas rurales.
