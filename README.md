@@ -126,6 +126,7 @@ PIR como los servomotores de la puerta:
 ![Montaje 1_2](Imágenes/Pruebas/Ida_1.2.png)
 Las 2 imágenes anteriores se presenta una primera organización de todo lo necesario 
 para su funcionamiento. 
+
 A lo largo del montaje final se cambiaron ciertas medidas y organizaciones a las presentadas en estos diseños.
 ### Pruebas de montaje
 
